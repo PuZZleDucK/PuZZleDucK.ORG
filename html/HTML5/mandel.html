@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html manifest="puzzleduck.appcache">
+
+<HTML>
+<HEAD>
+<TITLE>HTML5 Mandelbrot</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<HR />
+<H3 ALIGN="CENTER"><FONT SIZE="3" COLOR="#000077">HTML5 Mandelbrot</FONT></H3>
+<HR />
+
+
+
+
+
+
+
+
+<BR />
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">Mandelbrot</FONT></H3>
+<p>by PuZZleDucK</p>
+<canvas id="mandelCanvas" width="200" height="200"
+  style="border:3px solid #FF0000;">
+  </canvas> 
+
+
+
+
+<div>Worker:</div>
+<button onclick="getWorkerStatus()">Get Worker Status</button>
+<button onclick="startWork()">Start Work</button>
+<button onclick="stopWork()">Stop Work</button>
+<div id="workerstatusresult">...</div>
+<div id="workerresult">...</div>
+<script>
+var wResult=document.getElementById("workerstatusresult");
+var result=document.getElementById("workerresult");
+function getWorkerStatus()
+{
+  if(typeof(Worker)!=="undefined")
+  {
+    wResult.innerHTML="Worker supported!";
+  } else {
+    wResult.innerHTML="Worker not supported.";
+  }
+}
+function startWork()
+{
+  if(typeof(w)=="undefined")
+  {
+    w=new Worker("demo_workers.js");
+  }
+
+  w.onmessage=function(event){
+    result.innerHTML=event.data;
+
+    var c=document.getElementById("mandelCanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#0000FF";
+ //   ctx.fillRect(5,5,50+event.data,25+event.data);
+
+    var horizontal = 0;
+    var vertical = 0;
+    var mandelRangeH = 2.5;
+    var mandelRangeV = 2.5;
+    var mandelStartH = -1.5
+    var mandelStartV = -1.0;
+    var mandelStepH = mandelRangeH / 200.0;
+    var mandelStepV = mandelRangeV / 200.0;
+    var mandelHorizontal = mandelStartH;
+    var mandelVertical = mandelStartV;
+
+    //wResult.innerHTML="...start:" + mandelStartH +","+ mandelStartV;
+    //wResult.innerHTML="...steps:" + mandelStepH +","+ mandelStepV;
+    //wResult.innerHTML="...ends:" + (mandelStartH+(200*mandelStepH)) +","
+    //      +(mandelStartV+ (200*mandelStepV));
+
+
+    for (vertical = 0; vertical < 200; vertical++) {
+      for (horizontal = 0; horizontal < 200; horizontal++) {
+//rgba(0-255,0-255,0-255,0-1)
+        var escapeNumber = mandelbrot(mandelHorizontal, mandelVertical);
+        mandelHorizontal += mandelStepH;
+        //wResult.innerHTML="...escape:" + escapeNumber;
+        //console.log("escape("+mandelHorizontal+","+mandelVertical+"):"+escapeNumber);
+
+        //ctx.fillStyle="rgba(0,"+(100*mandelVertical)+",0,1)";
+        ctx.fillStyle="rgba(0,"+(escapeNumber*2)+",0,1)";
+        ctx.fillRect(horizontal,vertical,horizontal+1,vertical+1);
+      }
+      mandelVertical += mandelStepV;
+      mandelHorizontal = mandelStartH;
+    }
+
+//    var svg=document.getElementById("mandelSVG");
+//    svg.innerHTML="120,20 20,190 190,20 10,20 190,190";
+  }; 
+
+  
+
+}
+
+
+
+
+
+function mandelbrot(xHor, yVer)
+{
+  var distance = 0.0;
+  var realZ = 0.0;
+  var compZ = 0.0;
+  var cycleCount = 0
+  for (cycleCount = 0; (cycleCount < 255) && (distance <= 2.0); cycleCount++) {
+    // z = z^ 2 + c 
+    //square
+    realZ = ((realZ * realZ) - (compZ * compZ));
+    compZ = ((realZ * compZ) + (compZ * realZ));
+    //add
+    realZ = realZ + xHor;
+    compZ = compZ + yVer;
+
+    distance = Math.sqrt((realZ * realZ) + (compZ * compZ));
+    
+  }
+
+  if( distance < 2.0 ) { //no escape
+    return 0;
+  } else {
+    return cycleCount; //escape in n
+  }
+
+}
+
+
+function stopWork()
+{
+  w.onmessage=function(event){
+    result.innerHTML="Stopped.";
+  }; 
+}
+</script>
+
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">Done.</FONT></H3>
+<HR />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<BR />
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">Test 34:</FONT></H3>
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">numeric input</FONT></H3>
+<p>restrict (3->5): <input type="number" name="quantity" min="3" max="5"></p>
+<p>Range: <input type="range" name="points" min="10" max="100"></p>
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">WIN</FONT></H3>
+<HR />
+
+
+
+
+
+
+
+
+
+
+<BR />
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">Test 36:</FONT></H3>
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">local storage</FONT></H3>
+<p>TODO</p>
+
+<button onclick="getStorage()">Get Storage Status</button>
+<div id="storagesupport">waiting...</div>
+<div id="result">...</div>
+<script>
+var y=document.getElementById("storagesupport");
+function getStorage()
+{
+    y.innerHTML="function";
+  if(typeof(Storage)!=="undefined")
+  {
+  // Yes! localStorage and sessionStorage support!
+  // Some code.....    
+    y.innerHTML="Storage supported!";
+
+    localStorage.pi="3.14something"; // also avaliable: sessionStorage
+
+    document.getElementById("result").innerHTML="Storing Pi: "
+      + localStorage.pi; 
+  }
+  else
+  {
+  // Sorry! No web storage support..
+    y.innerHTML="Storage not supported :(";
+  }
+}
+</script>
+
+<p>Caching the current page... So this change should not appear untill I update the manifest... oops... it did change</p>
+<p>still changing</p>
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">WIN... mostly.</FONT></H3>
+<HR />
+
+
+
+
+
+
+
+
+
+<BR />
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">Test 31:</FONT></H3>
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">color picker</FONT></H3>
+<p>Realy, a color picker(not in firefox): </p>
+<input type="color" name="newcolor">
+<H3 ALIGN="CENTER"><FONT SIZE="2" COLOR="#000077">WIN</FONT></H3>
+<HR />
+
+
+
+
+
+
+
+
+<div>why 9s?</div>
+
+<BR />
+<BR />
+<HR />
+<H3 ALIGN="CENTER"><FONT SIZE="1" COLOR="#000077">PuZZleDucK</FONT></H3>
+<HR />
+</BODY>
+</HTML>
