@@ -1,3 +1,12 @@
-Source for my website PuZZleDucK.ORG
+# Repository for PuZZleDucK.ORG
 
-Created during migration to Digital Ocean
+### Author
+
+PuZZleDucK (Ben Minerds)
+
+### History
+
+- deployed to Agility Hosting via FTP
+- upgraded to git based deployment
+- migrate previous content
+- updated during migration to Digital Ocean
