@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="dev 07">
+  <meta name="author" content="PuZZleDucK">
+  <title>PuZZleDucK dot org</title>
+  <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="header">
+    <H1 align=CENTER>:: My work in the Linux Kernel 01 ::</H1>
+    <H3 align=CENTER>Intro/Resourses (It's all Greg K-H's fault)</H3>
+  </div>
+  
+  <div class="middle"><nav>
+
+
+<P>Greg Kroah-Hartman started all this by giving such an inspiring talk about four years ago, which motivated me to do something I'd been meaning to do for years... get a patch into the Linux Kernel.</P>
+
+<div class="code" align="middle"><code>
+	<A href="https://www.youtube.com/watch?v=LLBrBBImJt4">https://www.youtube.com/watch?v=LLBrBBImJt4</A>
+</code></div>
+
+</br>
+<div class="code"><code>
+</br>
+<p align="middle"><iframe width="560" height="315" src="//www.youtube.com/embed/LLBrBBImJt4" frameborder="0" allowfullscreen></iframe></p>
+</br>
+</code></div>
+</br>
+
+
+<P></P>
+<P>Getting started in comedy drivers... step one: go streight to the penguins source and clone Linus's tree:</P>
+<div class="code"><code>
+	<P>git clone https://github.com/torvalds/linux.git</P>
+</code></div>
+
+
+<P>Now lets get out beyond the bleeding edge of the current stable kernel and add the Linux Next branches, this seems to be the preffered route into the kernel for usb driver related submissions. I have begun to realise that some other high level maintainers have their own "linux next" like trees, so do a quick bit of research into what branch or repository is appropriate for your patch.</P>
+<div class="code"><code>
+	<P>git remote add linux-next git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git</P>
+	<P>git fetch linux-next</P>
+	<P>git fetch --tags linux-next</P>
+</code></div>
+
+<P>To avoid getting too far behind and increasing the possibility of creating conflicts with others working on the same part of the kernel, when returning to a possibly stale tree (24 hrs? haha) we should always update our tree:</P>
+<div class="code"><code>
+	<P>git remote update</P>
+</code></div>
+
+
+
+<BR />
+
+<P>For my own records at least my configuration while submitting to the linux kernel is as follows.</P>
+<div class="code"><code>
+	<p># :: Setup git user ::</p>
+	<p>git config  "user.name" "Ben Minerds"</p>
+	<p>git config --global "user.email" puzzleduck@gmail.com</p>
+</code></div>
+
+	<BR />
+
+
+
+
+</div>
+
+<div class="lower">
+<p>Other useful long term resources:</p>
+<p><a href="file:///usr/src/">If you run Linux... your already here :D</a></p>
+<p></p>
+<p></p>
+</div>
+</body>
+
+
+<footer class="footer">
+<p>(c) Me & GPL3.</p>
+</footer>
+
+
+</html>
+

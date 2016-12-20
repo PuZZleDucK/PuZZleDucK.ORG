@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="dev 07">
+  <meta name="author" content="PuZZleDucK">
+  <title>PuZZleDucK dot org</title>
+  <link href="http://www.puzzleduck.org/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="header">
+    <H1 align=CENTER>:: Development Adventures 07 ::</H1>
+    <H3 align=CENTER>An Array without bounds.</H3>
+  </div>
+  
+  <div class="middle"><nav>
+
+
+<P>I just wanted to write a short piece about a horrifying little trick in java I learnt from trawling through the back catalogue of Dr. Heinz K's newsletter. I highly recommend skimming the article list for interesting titles at a minimum.</P>
+<BR />
+<P>Anyhow, in <a href=http://www.javaspecialists.eu/archive/Issue162.html>article 162...</a> (you need to scroll down to near the end where he's telling us what not to do :p) he mentions a technique of looping through an array without bounds checking the loop. Instead the exception mechanism is hijacked and used to exit the loop when the inevitable ArrayOutOfBounds exception is raised by simply executing a break to exit the infinite loop.</P>
+<BR />
+
+<P>He implies in the article that in early versions of java this was faster than the standard for loop idiom, but that this is not true for modern JVMs. The article is a few years old now but at least preliminary testing on my pc seems to indicate that the exception-hijacking-idiom is once again faster... at least on 64bit Linux. Anyhow, the technique is not advised for every day use but is an interesting tool to have in the box.</P>
+<BR />
+
+<P><div align=CENTER><a href=http://en.wikipedia.org/wiki/Wikipedia_talk:WikiProject_Agriculture/Archive_4#Bailing_hook><img src=http://upload.wikimedia.org/wikipedia/commons/7/77/Bale_hooks_and_baling_twine.jpg alt="Bailing hook" width=600 ></a></div></P>
+
+
+
+</div>
+</body>
+
+
+<footer class="footer">
+<p>(c) Me & GPL3.</p>
+</footer>
+
+
+</html>
+

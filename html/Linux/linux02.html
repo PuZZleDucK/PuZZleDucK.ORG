@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="dev 07">
+  <meta name="author" content="PuZZleDucK">
+  <title>PuZZleDucK dot org</title>
+  <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="header">
+    <H1 align=CENTER>:: My work in the Linux Kernel 02 ::</H1>
+
+
+    <H3 align=CENTER>Belkin Serial Patch. Uneventfull beginnings.</H3>
+
+<H3 align=CENTER>April 2012</H3>
+
+  </div>
+  
+  <div class="middle"><nav>
+
+
+<P>Inspired by Gregs talk I mention in the last post, I created this simple little patch. It modifies "/drivers/usb/serial/belkin_sa.c" to conform with the checkpatch script. The patch was accepted as first submitted but there was a requirement to use a "real" name for the <a href="https://www.kernel.org/doc/Documentation/SubmittingPatches">Signed-off-by tag.<a> Which is fair enough.</P>
+
+
+<p>There is a great visualization of the diff <a href="http://code.google.com/p/linux-picosam9g45/source/diff?spec=svn70f3c7586c708bce8f525246c8b27322edc00cc7&r=70f3c7586c708bce8f525246c8b27322edc00cc7&format=side&path=/drivers/usb/serial/belkin_sa.c">here</a> and the patch in Linuses tree is <a href="http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=70f3c7586c708bce8f525246c8b27322edc00cc7">here</a>. The first is a handy little visualization for viewing this patch as it is all modified whitespace, a few spaces before tabs removed and the formatting of a case statement updated. In the Linux tree you'll need to use a trick to "see" the changes.</p>
+
+<p>The LKML entry for the origional submission can be found <a href="https://lkml.org/lkml/2012/4/26/70">here.</a> It is included below (although the changes are not visible as they are mushed up by HTML, thems the breaks).</p>
+
+
+
+
+
+
+
+<BR />
+
+<div class="code"><code>
+
+<b>From</b>	puzzleduck@gmail ...<br/>
+<b>Subject</b>	[PATCH] USB: serial: Changes to conform with coding style<br/>
+<b>Date</b>	Thu, 26 Apr 2012 19:31:04 +1000<br/><br/>
+	
+Removed some spaces before tabs and reformatted switch statement.<br/>
+
+Signed-off-by: PuZZleDucK <puzzleduck@gmail.com><br/>
+---<br/>
+ drivers/usb/serial/belkin_sa.c |   13 +++++++------<br/>
+ 1 files changed, 7 insertions(+), 6 deletions(-)<br/>
+diff --git a/drivers/usb/serial/belkin_sa.c b/drivers/usb/serial/belkin_sa.c<br/>
+index a52e0d2..35b0d3d 100644<br/>
+--- a/drivers/usb/serial/belkin_sa.c<br/>
++++ b/drivers/usb/serial/belkin_sa.c<br/>
+@@ -2,17 +2,17 @@<br/>
+  * Belkin USB Serial Adapter Driver<br/>
+  *<br/>
+  *  Copyright (C) 2000		William Greathouse<br/> (wgreathouse@smva.com)<br/>
+- *  Copyright (C) 2000-2001 	Greg Kroah-Hartman (greg@kroah.com)<br/>
++ *  Copyright (C) 2000-2001	Greg Kroah-Hartman (greg@kroah.com)<br/>
+  *  Copyright (C) 2010		Johan Hovold (jhovold@gmail.com)<br/>
+  *<br/>
+  *  This program is largely derived from work by the linux-usb group<br/>
+  *  and associated source files.  Please see the usb/serial files for<br/>
+  *  individual credits and copyrights.<br/>
+  *<br/>
+- * 	This program is free software; you can redistribute it and/or modify<br/>
+- * 	it under the terms of the GNU General Public License as published by<br/>
+- * 	the Free Software Foundation; either version 2 of the License, or<br/>
+- * 	(at your option) any later version.<br/>
++ *	This program is free software; you can redistribute it and/or modify<br/>
++ *	it under the terms of the GNU General Public License as published by<br/>
++ *	the Free Software Foundation; either version 2 of the License, or<br/>
++ *	(at your option) any later version.<br/>
+  *<br/>
+  * See Documentation/usb/usb-serial.txt for more information on using this<br/>
+  * driver<br/>
+@@ -403,7 +403,8 @@ static void belkin_sa_set_termios(struct tty_struct *tty,<br/>
+ 		case CS8:<br/>
+ 			urb_value = BELKIN_SA_DATA_BITS(8);<br/>
+ 			break;<br/>
+-		default: dbg("CSIZE was not CS5-CS8, using default of 8");<br/>
++		default:<br/>
++			dbg("CSIZE was not CS5-CS8, using default of 8");<br/>
+ 			urb_value = BELKIN_SA_DATA_BITS(8);<br/>
+ 			break;<br/>
+ 		}<br/>
+-- <br/>
+1.7.2.5<br/>
+
+</code></div></br>
+
+
+</div>
+
+<div class="lower">
+
+
+
+<p>This recieved the following reply from Greg K-H:</p>
+
+<div class="code"><code>
+On Thu, Apr 26, 2012 at 04:41:57PM +0400, Sergei Shtylyov wrote:<br/>
+> Hello.<br/>
+> <br/>
+> On 26-04-2012 13:31, puzzleduck@gmail.com wrote:<br/>
+> <br/>
+> >From: PuZZleDucK<puzzleduck@gmail.com><br/>
+> <br/>
+> >Removed some spaces before tabs and reformatted switch statement.<br/>
+> <br/>
+> >Signed-off-by: PuZZleDucK<puzzleduck@gmail.com><br/>
+> <br/>
+>    Real name is needed here, no aliases allowed.<br/><br/>
+
+I agree, please see Documentation/SubmittingPatches for what<br/>
+"Signed-off-by:" means, and why we can't accept this as-is.<br/><br/>
+
+greg k-h<br/>
+</code></div></br>
+
+<p>So I fixed that up in the patch, resubmitted and now it's <a href="http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=70f3c7586c708bce8f525246c8b27322edc00cc7">in Linuses tree :D.</a></p>
+
+
+
+
+<BR />
+
+<P><div align=CENTER><a href=../img/tux.png alt="Tux" width=600 ></a></div></P>
+
+
+
+</div>
+</body>
+
+
+<footer class="footer">
+<p>(c) Me & GPL3.</p>
+</footer>
+
+
+</html>
+

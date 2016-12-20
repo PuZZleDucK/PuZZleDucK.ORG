@@ -1,0 +1,173 @@
+<h2 class='date-header'><span>Monday, 26 November 2012</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='5339381179705770999' itemprop='blogId'/>
+<meta content='6979832715391425219' itemprop='postId'/>
+<a name='6979832715391425219'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://android-development-adventures.blogspot.com.au/2012/11/a-device-to-give-gosling-nightmares.html'>A device to give Gosling nightmares!</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-6979832715391425219' itemprop='description articleBody'>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+Making up for the long delay between my last two posts, here's another one mere hours after the last, and this time with code!<br />
+<code>
+:D</code>
+So, I've been reading about <a href="http://www.lysator.liu.se/c/duffs-device.html">Duff's</a> <a href="http://stackoverflow.com/questions/514118/how-does-duffs-device-work#514289">device</a> and <a href="http://en.wikipedia.org/wiki/Loop_unwinding">loop unrolling</a>, and wanted to have a crack at it in Java... well of course there is absolutely no point implementing this in Java, and the results are just as I expected... the JVM can optimize a normal loop better than it can an unrolled loop :p ... I've even heard that every time a developer unwinds a loop in Java, James Gosling gets a headache... sorry James.<br />
+<br />
+Still it was a good interesting exercise... I challenge you all to implement an unrolled loop in your language of choice! I'd love to see a lisp version, actually on second thoughts...<br />
+<br />
+Anyhow, here it is:<br />
+<code>
+<br />
+//(c)me &amp; GPL3:<br />public class DuffsDevice<br />{<br />&nbsp; public static void main(String[] args)<br />&nbsp; {<br />&nbsp;&nbsp;&nbsp; int demoSize = 80;//woot... 0 works<br />&nbsp;&nbsp;&nbsp; System.out.println("Normal loop: "&nbsp; );<br />&nbsp;&nbsp;&nbsp; long start = System.nanoTime();<br />&nbsp;&nbsp;&nbsp; for(int i = 0; i &lt; demoSize; i++)// one partial two full for demo<br />&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(" Bit:" + i);<br />&nbsp;&nbsp;&nbsp; }//normal loop<br />&nbsp;&nbsp;&nbsp; System.out.println("\nNormal&nbsp; end: " + (System.nanoTime()-start));<br /><br />&nbsp;&nbsp;&nbsp; final int winding = 5;//up to 6<br />&nbsp;&nbsp;&nbsp; System.out.println("Duffs device in Java loop: ");<br />&nbsp;&nbsp;&nbsp; start = System.nanoTime();<br />&nbsp;&nbsp;&nbsp; for(int i = 0; i &lt; demoSize; i = i)// one partial two full for demo<br />&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print("\n" );//System.out.println("size%winding:" + demoSize%winding + "&nbsp; i:" + i&nbsp; );<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; switch( (i + winding &lt;= demoSize) ? 0 : winding-(demoSize%winding) )<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //case (winding-6): { System.out.print(" Bit:" + (i) +" -a" ); i++; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case (winding-5): { System.out.print(" Bit:" + (i) +" -b" ); i++; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case (winding-4): { System.out.print(" Bit:" + (i) +" -c" ); i++; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case (winding-3): { System.out.print(" Bit:" + (i) +" -d" ); i++; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case (winding-2): { System.out.print(" Bit:" + (i) +" -e" ); i++; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case (winding-1): { System.out.print(" Bit:" + (i) +" -f" ); i++; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }//switch<br />&nbsp;&nbsp;&nbsp; }//Duffs device<br />&nbsp;&nbsp;&nbsp; System.out.println("\nDuffs device in Java&nbsp; end: " + (System.nanoTime()-start));<br />&nbsp;&nbsp;&nbsp; //usually arround 1803034 in the normal loop<br />&nbsp;&nbsp;&nbsp; //usually arround 2272790(winding 3) 2065498(winding 6) for unrolled loop... ymmv of course.<br />&nbsp;&nbsp;&nbsp; //Duff was right... this is even pretty ugly in Java :p ... ugly, but fun :D<br />&nbsp; }//main<br />}//class</code>
+<br />
+<br />
+<br />
+Hope you enjoyed reading, I especially liked the embedded conditional statement as the switch control statement... writing that bit really got my heart racing haha</div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='http://www.blogger.com/profile/17997715260758486610' itemprop='url'/>
+<a class='g-profile' href='http://www.blogger.com/profile/17997715260758486610' rel='author' title='author profile'>
+<span itemprop='name'>PuZZleDucK</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='http://android-development-adventures.blogspot.com/2012/11/a-device-to-give-gosling-nightmares.html' itemprop='url'/>
+<a class='timestamp-link' href='http://android-development-adventures.blogspot.com.au/2012/11/a-device-to-give-gosling-nightmares.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2012-11-26T05:50:00-08:00'>05:50</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://android-development-adventures.blogspot.com.au/2012/11/a-device-to-give-gosling-nightmares.html#comment-form' onclick=''>
+No comments:
+    </a>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=5339381179705770999&postID=6979832715391425219' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-515563521'>
+<a href='http://www.blogger.com/post-edit.g?blogID=5339381179705770999&postID=6979832715391425219&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=6979832715391425219&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=6979832715391425219&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=6979832715391425219&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=6979832715391425219&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=6979832715391425219&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://android-development-adventures.blogspot.com/2012/11/a-device-to-give-gosling-nightmares.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='post-outer'>
+<div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='5339381179705770999' itemprop='blogId'/>
+<meta content='3515995032968269749' itemprop='postId'/>
+<a name='3515995032968269749'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://android-development-adventures.blogspot.com.au/2012/11/i-got-sort-of-not-realy-slashdoted.html'>I got (sort of ... not realy) Slashdoted!</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-3515995032968269749' itemprop='description articleBody'>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div>
+<div>
+<div dir="ltr">
+&nbsp; Again it's been a while, but this time I was just sick... still that didn't stop lot of things happening.<br />
+&nbsp;&nbsp; First of let's address the title of this post: I got Slashdoted, well sort of... 11 hits is a lot for <a href="https://www.youtube.com/watch?v=gBrMR9HrF5w&amp;list=UU0Px8r1nMNPVHn4sFYnMkfg&amp;index=3&amp;feature=plcp">a 30 minute video of a guy using Gimp (badly) for simple editing</a>, haha. I entered the Slashdot 15th anniversary logo competition and <a href="http://slashdot.org/logo15.pl"><strike>came first!</strike> was picked for the first day</a> of the month, haha... anyhow my logo was a little endian joke (dot slash) with an insensitive clod reference thrown in for good measure. I love the "insensitive clod" poll options, I so often pick them.</div>
+<div dir="ltr">
+<br /></div>
+I also wrote an email to <strike>Mr</strike><a href="http://www.javaspecialists.eu/archive">Dr Heinz Max Kabutz (of Java Specialists newsletter</a>)... detailing what I thought was an interesting difference between Androids handling of the compilation routine and <a href="http://www.javaspecialists.eu/archive/Issue050.html">the way Java does it</a>. I was partially so interested in the topic as I was under the impression little to no pre-compilation was performed on java code, so to learn about any java pre-compilation was interesting but to then realize that Android and Java both use different pre-compilation routines was somewhat more interesting. Hans got back to me, but unfortunately didn't know about the Android compiler. This has left me with a lingering desire to learn more about precompilation in java so lookout for coverage of that in the future.<br />
+<br />
+&nbsp;<a href="http://www.javaspecialists.eu/archive/Issue050.html">Dr Kabutzs example:</a><br />
+<pre><b><span style="color: navy;">public class</span></b> A1 {
+  Character aChar = new Character(<b><span style="color: green;">'\u000d'</span></b>);
+}</pre>
+<pre>&nbsp;</pre>
+<pre>&nbsp;</pre>
+</div>
+In addition
+
+I also received a charming but somewhat disturbing email from a Mr. Shaun P.  who was concerned that because I had licensed code used in a tutorial as GPL anyone following that tutorial would be forced to licence anything they wrote using that technique as GPL.
+
+Besides the viral nature of the GPL being half the point of the whole licence, I would have thought someone's use of my code would have to be substantial and direct for me to claim it as a derivative work... simply using the same technique or a small chunk would simply not suffice. Remember, Linus does not even consider Bionic to be a derivative work.
+
+
+I also began creating solutions to the Project Euler problems in the form of Android applications.
+Checkout Euler 1 and Euler 2 on the Play Store now. Euler 3 is in the works, but it's a step learning curve between problems two and three.
+<br />
+<br />
+While recovering from illness and in a state of total delirium I created a funny little video in tribute to <a href="http://www.youtube.com/watch?v=0gtAJL4bKGk&amp;lc=mwStJrKCNr1Wua-Vn2-V8zayxcrRakbh3lNOBtGXRlw&amp;lch=email&amp;feature=em-comment_received">Melencolia 1</a> which was introduced to me by ... from the <a href="http://www.youtube.com/watch?v=gGvyeuDT2Do&amp;feature=related">Numberfile videos</a>, absolutely worth checking out if you haven't yet.<br />
+<br />
+and finally: What the hell is up with <a href="http://old.nabble.com/Real-men-don%27t-attack-straw-men-tt14256924r0.html">those BSD guys</a>? I just can't fathom how patient and polite Richard Stallman is... the background to this is that bsd got removed from the fsf list of endorsed projects and Stallman vaguely implied that they promote proprietary software. Well, the bsd guys were tearing into Stallman in this forum demanding an apology or something. Anyhow I think Stallman comes of looking professional and (overly) polite, what do you all think out there?
+
+</div>
+</div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='http://www.blogger.com/profile/17997715260758486610' itemprop='url'/>
+<a class='g-profile' href='http://www.blogger.com/profile/17997715260758486610' rel='author' title='author profile'>
+<span itemprop='name'>PuZZleDucK</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='http://android-development-adventures.blogspot.com/2012/11/i-got-sort-of-not-realy-slashdoted.html' itemprop='url'/>
+<a class='timestamp-link' href='http://android-development-adventures.blogspot.com.au/2012/11/i-got-sort-of-not-realy-slashdoted.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2012-11-26T02:24:00-08:00'>02:24</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://android-development-adventures.blogspot.com.au/2012/11/i-got-sort-of-not-realy-slashdoted.html#comment-form' onclick=''>
+No comments:
+    </a>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=5339381179705770999&postID=3515995032968269749' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-515563521'>
+<a href='http://www.blogger.com/post-edit.g?blogID=5339381179705770999&postID=3515995032968269749&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=3515995032968269749&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=3515995032968269749&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=3515995032968269749&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=3515995032968269749&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=5339381179705770999&postID=3515995032968269749&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://android-development-adventures.blogspot.com/2012/11/i-got-sort-of-not-realy-slashdoted.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+

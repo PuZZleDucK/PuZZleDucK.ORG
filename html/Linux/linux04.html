@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="dev 07">
+  <meta name="author" content="PuZZleDucK">
+  <title>PuZZleDucK dot org</title>
+  <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="header">
+    <H1 align=CENTER>:: My work in the Linux Kernel 04 ::</H1>
+    <H3 align=CENTER>Documentation Patch (What have I gotten myself into?)</H3>
+<H3 align=CENTER>May 2013</H3>
+  </div>
+  
+  <div class="middle"><nav>
+
+<P>Trying to remove a broaken link... to embed or not to embed (and the importance of running checkpatch.c)</P>
+<BR />
+<p>My inspiration for this patch came from simply exploring the kernel documentation and bumping into a couple of links that failed to work, but what a can of worms I opened.</p>
+
+<P>My first idea was to import the documents so that they could be managed in the kernel, the kernelhub website has <a href="http://www.kernelhub.org/?msg=264068&p=2">a good summary</a> of the patch series (<a href="http://www.spinics.net/lists/linux-doc/msg10724.html">spinics.net</a> also have a decent summary): </P>
+
+ <div class="code"><code>
+ This patch series <br/>
+ <ol>
+ <li>1. adds "the perfect patch" doc. </li>
+ <li>2. adds "submission format" doc. </li>
+ <li>3. update refs to perfect-patch. </li>
+ <li>4. fix link in perfect patch. </li>
+ <li>5. update refs to sub-format. </li>
+ <li>6. fix source ref in perfect patch. </li>
+ <li>7. reformat  submission format doc. </li>
+ <li>8. move other documents into patch sub directory.</li>
+</ol>
+</div></code>
+<p>or:</p>
+<div class="code"><code>
+  Documentation: Adding "The Perfect Patch" by Andrew Morton<br/>
+  Documentation: Adding "Linux Kernel Patch Submission Format"<br/>
+  Documentation: Replacing references to broken perfect patch URL<br/>
+  Documentation: Replacing reference to broken perfect patch URL<br/>
+  Documentation: Replacing reference to broken submission format URL<br/>
+  Documentation: Updating a broken link in "the perfect patch"<br/>
+  Documentation: Reformatting "Linux Kernel Patch Submission Format"<br/>
+  Documentation: Move other patch related document<br/>
+</div></code>
+
+<p>This proposal sparked a few <a href ="https://lkml.org/lkml/2013/5/24/2">interesting responses</a> :) ... none of them good :( ... with <a href="https://lkml.org/lkml/2013/5/24/2">Rob Landley</a> asking the poin question <a href="http://www.spinics.net/lists/linux-doc/msg10735.html">"What's in this that _isn't_ in SubmittingPatches? What does having this second file add?"</a> to which I must admit there was no good answer... I had mindlessly imported the document wholesale and (well not mindlessly, I did read it first and there was plenty of good general advice, but) there was no specific requirements stated there that were not in SubmittingPatches.txt. A few other bits of Robs advice rang true, but I felt I should have waited untill they were in the kernel before making the changes... but alas they have to be there to be updated, such is life.</p>
+<BR />
+<p>So my final patch ended up just being a simple url update:</p>
+
+<BR />
+<p>TODO: <a href="https://lkml.org/lkml/2013/5/23/456">Dave Jones</a> also notes a couple of broaken links and outdated infos</p>
+<div class="code"><code>
+<p>An old reference to: ftp://ftp.kernel.org/pub/linux/kernel/v2.6/snapshots/</p>
+<p>And some other text in the file where the regex s/bitkeeper/git/ would do wonders</p>
+</div></code>
+<p>Thanks Dave :) Links are going on the todo list.</p>
+
+<P><div align=CENTER><a href=../img/tux.png alt="Tux" width=600 ></a></div></P>
+
+
+
+</div>
+</body>
+
+
+<footer class="footer">
+<p>(c) Me & GPL3.</p>
+</footer>
+
+
+</html>
+

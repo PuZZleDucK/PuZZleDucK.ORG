@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="dev 07">
+  <meta name="author" content="PuZZleDucK">
+  <title>PuZZleDucK dot org</title>
+  <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="header">
+    <H1 align=CENTER>:: My work in the Linux Kernel 03 ::</H1>
+    <H3 align=CENTER>Keyspan checkpatch fixes for drivers/usb/serial/keyspan.c<</H>
+
+<H3 align=CENTER>July 2012</H3>
+  </div>
+  
+  <div class="middle"><nav>
+
+
+
+
+
+<p>From <a href="http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?qt=grep&q=ben+minerds">a search of Linuses git tree</a> here is a nice little summary of the changes made in their final form. I also seem to remember <a href=http://marc.info/?l=linux-kernel&m=134201585403638&w=2>having some issues</a> with email formatting and having my emails mangled by gmail. I have just recently discovered the Eudyptula Challenge which may help with these kind of issues in the future, but I'll discuss that another time when I cover Eudyptula challenge one and how I may have inadvertanty sent HTML emails to the Linux Mailing list.</p>
+
+<div class="code"><code>
+Age   	"Commit message" 	(Author)	Files	Lines<br/>
+2012-07-17	"USB: serial: keyspan: Removed unrequired parentheses."	(Ben Minerds)	1	-1/+1<br/>
+2012-07-17	"USB: serial: keyspan: Removed trailing whitespace."	(Ben Minerds)	1	-1/+1<br/>
+2012-07-17	"USB: serial: keyspan: Fixed space near open parenthesis."	(Ben Minerds)	1	-1/+1<br/>
+2012-07-17	"USB: serial: keyspan: Fixed space around equals."	(Ben Minerds)	1	-1/+1<br/>
+2012-07-17	"USB: serial: keyspan: Fix spacing around conditional."	)Ben Minerds)	1	-9/+9<br/>
+</div></code>
+
+
+
+
+
+<BR />
+<p>... but it wasn't always so simple ... </p>
+<BR />
+
+
+<p>The origional submission was pedanticaly and rediculiously verbose, with 21 seperate patches. The statistics were good, before: 19 errors, 69 warnings. After:
+total: 0 errors, 16 warnings. Unfortunatly the way I had put together the patch series wasn't the easiest to digest. I had kept each change seperate after recently learning about bisecting the kernel isolating changes. Of course the chances of introducing a bug that would crash the kernel in the documentation is pretty minimal, so my caution was a bit over zelious.</p>
+
+<p><div class="code"><code>
+	$ ls *.patch | xargs grep -h PATCH<br/>
+	Subject: [PATCH 01/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 02/21] USB: serial: Changes to conform with checkpatch.sh script. spaces required around '?' and ':'<br/>
+	Subject: [PATCH 03/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 04/21] USB: serial: Changes to conform with checkpatch.sh script. spaces required around '='<br/>
+	Subject: [PATCH 05/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 06/21] USB: serial: Changes to conform with checkpatch.sh script. white space around '('<br/>
+	Subject: [PATCH 07/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 08/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 09/21] USB: serial: Changes to conform with checkpatch.sh script. spaces required around '?' and ':'.<br/>
+	Subject: [PATCH 10/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 11/21] USB: serial: Changes to conform with checkpatch.sh script. parentheses not required<br/>
+	Subject: [PATCH 12/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 13/21] USB: serial: Changes to conform with checkpatch.sh script. spaces required around '?' and ':'.<br/>
+	Subject: [PATCH 14/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 15/21] USB: serial: Changes to conform with checkpatch.sh script. spaces required around '?' and ':'.<br/>
+	Subject: [PATCH 16/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 17/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 18/21] USB: serial: Changes to conform with checkpatch.sh script. spaces required around '?' and ':'.<br/>
+	Subject: [PATCH 19/21] USB: serial: Changes to conform with checkpatch.sh script. spaces required around '?'.<br/>
+	Subject: [PATCH 20/21] USB: serial: Changes to conform with checkpatch.sh script. space before tabs.<br/>
+	Subject: [PATCH 21/21] USB: serial: Changes to conform with checkpatch.sh script. trailing whitespace.<br/>
+</div></code></p>
+
+
+<p>The responces from the mailing list was well put by <a href=https://lkml.org/lkml/2012/5/10/111>Sergei Shtylyov</a> that patch 2 could be merged with patches "9, 13, 15, 18, and 19 which claim to do the same thing". <a href=https://lkml.org/lkml/2012/5/10/121>Alan Cox</a> even suggested merging them all into one. So the next version breaks up the fixes into patches containing just that type of fix. So all the "space near (" fixes were in one patch, and all the "spaces around :?" in another</p>
+
+<p><div class="code"><code>
+	$ ls *.patch | xargs grep -h PATCH<br/>
+	Subject: [PATCH 1/6] USB: serial: Changes to conform with checkpatch. - space before tabs<br/>
+	Subject: [PATCH 2/6] USB: serial: Changes to conform with checkpatch. - spaces around '?' and ':'.<br/>
+	Subject: [PATCH 3/6] USB: serial: Changes to conform with checkpatch. - space around '='.<br/>
+	Subject: [PATCH 4/6] USB: serial: Changes to conform with checkpatch. - space near open parenthesis '('.<br/>
+	Subject: [PATCH 5/6] USB: serial: Changes to conform with checkpatch. - trailing whitespace.<br/>
+	Subject: [PATCH 6/6] USB: serial: Changes to conform with checkpatch. - parentheses not required.<br/>
+</div></code></p>
+
+
+
+
+
+<p>28th may - The final version needed to be rebased off of <a href=https://github.com/felipebalbi>Felipe Balbi</a>s <a href=https://lkml.org/lkml/2012/9/10/316>tree</a>. Maybe I should have checked the maintainers first, but it seemed to be no big deal and just another thing to be aware of while roaming around the Kernel at random. I also don't remember accidently "trying to introduce" the <a href=https://lkml.org/lkml/2012/5/9/237>Authored-By</a> tag, thanks Rich. There seems to be a quite funnly long standing joke about the number of tags in the Kernel, funny stuff.</p>
+
+
+
+
+<p><div class="code"><code>
+	$ ls *.patch | xargs grep -h PATCH<br/>
+	Subject: [PATCH 0/6] USB: serial: Changes to conform with checkpatch.<br/>
+	Subject: [PATCH 1/6] USB: serial: Removed space before tabs.<br/>
+	Subject: [PATCH 2/6] USB: serial: Fix spacing around conditional.<br/>
+	Subject: [PATCH 3/6] USB: serial: Fixed space around equals.<br/>
+	Subject: [PATCH 4/6] USB: serial: Fixed space near open parenthesis.<br/>
+	Subject: [PATCH 5/6] USB: serial: Removed trailing whitespace.<br/>
+	Subject: [PATCH 6/6] USB: serial: Removed unrequired parentheses.<br/>
+</div></code></p>
+
+
+
+
+
+
+
+
+<P>Then <a href=https://lkml.org/lkml/2012/7/11/345>Greg KH pointed out</a> that "Normally the 0/6 email is a text summary, and maybe the diffstat of the whole patchset.  But not a patch itself" which is certainly correct, and I'm not sure what I was thinking at the time as I didn't see to do this on the eirlier versions of the patch, I guess I left writing this a bit too long.</P>
+<BR />
+
+<P><div align=CENTER><a href=../img/tux.png alt="Tux" width=600 ></a></div></P>
+
+
+
+</div>
+</body>
+
+
+<footer class="footer">
+<p>(c) Me & GPL3.</p>
+</footer>
+
+
+</html>
+
