@@ -5,7 +5,7 @@ server {
 	server_name test.puzzleduck.org;
 
 	location /sub/ {
-		root /var/www/puzzleduck.org/test-html/sub;
+		root /var/www/puzzleduck.org/test-html;
 		index index.html index.htm index.nginx-debian.html index.php;
 	}
 
