@@ -4,7 +4,7 @@ server {
 	listen 80;
 	listen [::]:80;
 
-	root /var/www/test.org/html;
+	root /var/www/puzzleduck.org/test-html;
 
 	index index.html index.htm index.nginx-debian.html index.php;
 
