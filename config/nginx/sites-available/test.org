@@ -7,6 +7,8 @@ server {
 
 	location /sub/ {
 		index index.html index.htm index.nginx-debian.html index.php;
+		index NON_EXISTENT_FILE; # don't redirect to index
+		autoindex on;            # auto generate file listing
 	}
 
 	location /php/ {
