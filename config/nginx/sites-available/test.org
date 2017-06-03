@@ -2,27 +2,25 @@
 
 server {
 	listen 80;
-	listen [::]:80;
-
-	root /var/www/puzzleduck.org/test-html;
-
-	index index.html index.htm index.nginx-debian.html index.php;
-
 	server_name test.puzzleduck.org _;
+
+	location /sub-app/ {
+		root /var/www/puzzleduck.org/test-html/sub-test;
+		index index.html index.htm index.nginx-debian.html index.php;
+	}
+
+	location / {
+		root /var/www/puzzleduck.org/test-html;
+		index index.html index.htm index.nginx-debian.html index.php;
+	}
+
+
+
 
 	error_page 404 /404.html;
         error_page 500 502 503 504 /50x.html;
         location = /50x.html {
           root /usr/share/nginx/html;
         }
-
-	location ~ \.php$ {
-		include snippets/fastcgi-php.conf;
-
-		# With php7.0-cgi alone:
-		# fastcgi_pass 127.0.0.1:9000;
-		# With php7.0-fpm:
-		fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-	}
 
 }
