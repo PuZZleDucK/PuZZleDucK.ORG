@@ -4,9 +4,9 @@ server {
 	listen 80;
 	server_name test.puzzleduck.org _;
 
-	location /sub-app/ {
-		root /var/www/puzzleduck.org/test-html/sub-test;
-		index index.html index.htm index.nginx-debian.html index.php;
+	location /sub/ {
+		root /var/www/puzzleduck.org/test-html/sub;
+		index index.html;
 	}
 
 	location / {
