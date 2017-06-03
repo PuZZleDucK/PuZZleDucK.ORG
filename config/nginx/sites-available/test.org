@@ -3,9 +3,9 @@
 server {
 	listen 80;
 	server_name test.puzzleduck.org;
+	root /var/www/puzzleduck.org/test-html;
 
 	location /sub/ {
-		root /var/www/puzzleduck.org/test-html;
 		index index.html index.htm index.nginx-debian.html index.php;
 	}
 
@@ -13,12 +13,10 @@ server {
 		include snippets/fastcgi-php.conf;
 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;
 
-		root /var/www/puzzleduck.org/test-html;
 		index index.php;
 	}
 
 	location / {
-		root /var/www/puzzleduck.org/test-html;
 		index index.html index.htm index.nginx-debian.html index.php;
 	}
 
