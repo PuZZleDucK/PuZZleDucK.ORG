@@ -1,14 +1,14 @@
 # Alternate server configuration
 
 server {
-	listen 8080;
-	listen [::]:8080;
+	listen 80;
+	listen [::]:80;
 
 	root /var/www/test.org/html;
 
 	index index.html index.htm index.nginx-debian.html index.php;
 
-	server_name puzzleduck.org _;
+	server_name test.puzzleduck.org _;
 
 	error_page 404 /404.html;
         error_page 500 502 503 504 /50x.html;
