@@ -9,6 +9,11 @@ server {
 		index index.html index.htm index.nginx-debian.html index.php;
 	}
 
+	location /php/ {
+		root /var/www/puzzleduck.org/test-html;
+		index.php;
+	}
+
 	location / {
 		root /var/www/puzzleduck.org/test-html;
 		index index.html index.htm index.nginx-debian.html index.php;
