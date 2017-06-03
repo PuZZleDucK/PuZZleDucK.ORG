@@ -10,3 +10,4 @@ PuZZleDucK (Ben Minerds)
 - upgraded to git based deployment
 - migrate previous content
 - updated during migration to Digital Ocean
+- added and updated nginx config
