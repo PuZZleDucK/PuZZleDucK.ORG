@@ -13,7 +13,7 @@ sudo cp -vf config/nginx/sites-available/test.org /etc/nginx/sites-available/tes
 sudo cp -vf config/nginx/nginx.conf /etc/nginx/nginx.conf
 
 echo ":: TESTING NGINX"
-sudo nginx -t -c /var/www/puzzleduck.org/config/nginx/nginx.conf
+sudo nginx -t -c /etc/nginx/nginx.conf
 
 echo ":: RESTARTING NGINX"
 sudo nginx -s reload
