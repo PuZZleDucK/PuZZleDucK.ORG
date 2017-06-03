@@ -21,6 +21,10 @@ server {
 		index index.html index.htm index.nginx-debian.html index.php;
 	}
 
+	location /sub/secrets/ {
+		deny all;
+	}
+
 # cache images?
 #	location ~* \.(png|jpg|jpeg)$ {
 #		expires 10d;
