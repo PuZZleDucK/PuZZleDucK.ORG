@@ -4,7 +4,7 @@ server {
 	listen 80;
 	server_name test.puzzleduck.org;
 	root /var/www/puzzleduck.org/test-html;
-	error_page 403 /share/forbidden.html
+	error_page 403 /share/forbidden.html;
 
 	location /sub/ {
 		index NON_EXISTENT_FILE; # don't redirect to index
