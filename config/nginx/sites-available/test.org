@@ -24,7 +24,7 @@ server {
 	}
 
 	location /haskell/ {
-		fastcgi_pass http://localhost/~$USER/test.fcgi;
+		fastcgi_pass http://localhost/~$USER/haskell.fcgi;
 
 		index index.hs;
 	}
