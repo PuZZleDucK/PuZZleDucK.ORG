@@ -1,4 +1,4 @@
-module FastCGI ( main ) where
+module Main ( main ) where
 
 import Control.Concurrent
 import Network.FastCGI
