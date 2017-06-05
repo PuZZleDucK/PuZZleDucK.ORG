@@ -24,7 +24,7 @@ server {
 	}
 
 	location /haskell/ {
-		fastcgi_pass unix:/var/www/puzzleduck.org/test-html/haskell/haskell.fcgi;
+		fastcgi_pass http://localhost/~$USER/test.fcgi;
 
 		index index.hs;
 	}
