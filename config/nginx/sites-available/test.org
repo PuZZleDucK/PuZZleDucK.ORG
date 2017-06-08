@@ -16,9 +16,10 @@ server {
 		deny all;
 	}
 
-	location /sub/restricted/ {
-		client_max_body_size 1k;
-	}
+# limit upload size
+#	location /sub/restricted/ {
+#		client_max_body_size 1k;
+#	}
 
 	location /php/ {
 		include snippets/fastcgi-php.conf;
