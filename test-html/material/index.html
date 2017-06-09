@@ -1,501 +1,391 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="home page">
-      <meta name="author" content="PuZZleDucK">
-      <title>PuZZleDucK dot org</title>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="home page">
+  <meta name="author" content="PuZZleDucK">
+  <title>PuZZleDucK dot org</title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
 
-    <body class="white-text grey lighten-3">
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+<body class="white-text grey lighten-3">
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
-<div class="col s12 m12 l12 card-panel purple darken-3">
-  <ul id="javaDropDown" class="dropdown-content">
-     <li><a href="#!">link 1</a></li>
-     <li><a href="#!">link 2</a></li>
-     <li class="divider"></li>
-     <li><a href="#!">link 3</a></li>
-  </ul>
-  <nav>
-     <div class="nav-wrapper orange darken-3">
-        <a href="#" class="brand-logo center">:: PuZZleDucK ::</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
- <!-- Dropdown Trigger -->
-           <li><a class="dropdown-button" href="#!" data-activates="javaDropDown">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-     </div>
-  </nav>
-  <h4 class="white-text center">The projects and ponderings of Ben Minerds</h4>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="row">
-
-
-
-  <div class="col s12 m6">
-     <div class="card-panel orange darken-3 z-depth-3">
-       <h3><i class="material-icons small">account_balance</i> - Code for Australia</h3>
-       <p class="flow-text">Saying something about the project would be nice ;)</p>
-       <div class="card-image"><img src="http://puzzleduck.org/img/CfA_Logo_black.png" alt="Code for Australia logo" align="right" /></div>
-       <ul>
-         <li><a href="https://github.com/CodeforAustralia/dtf-genesis"> Source Code</a></li>
-         <li><a href="http://dtf-genesis.herokuapp.com/"> Deployed Version</a></li>
-         <li><a href="https://codeforaustralia.github.io/DTF-Blog/"> Blog and documentation</a></li>
-       </ul>
-     </div>
-  </div>
-
-  <div class="col s12 m6">
-     <div class="card-panel brown darken-4 z-depth-3">
-       <h3><i class="material-icons small">computer</i> - Free Software Melbourne</h3>
-       <p class="flow-text">Saying something about the project would be nice ;)</p>
-       <a href="http://www.softwarefreedomday.org/"><div class="card-image"><img src="http://www.softwarefreedomday.org/countdown/banner1-UTC-4-en.png" alt="Celebrate SFD with us in September" align="right" /></div></a>
-       <ul>
-         <li><a href="FSM/2015/06/gnews.html"> June 2015 Gnews</a></li>
-         <li><a href="FSM/2015/07/gnews.md"> July 2015 Gnews</a></li>
-         <li><a href="FSM/">General FSM media</li>
-       </ul>
-     </div>
+  <div class="col s12 m12 l12 card-panel orange darken-3">
+    <ul id="dropDown" class="dropdown-content brown darken-4">
+       <li><a href="#!">About</a></li>
+       <li class="divider"></li>
+       <li><a href="#!">LinkedIn</a></li>
+       <li><a href="#!">GitHub</a></li>
+       <li><a href="#!">Twitter</a></li>
+    </ul>
+    <nav>
+       <div class="nav-wrapper brown darken-4">
+          <a href="#" class="brand-logo center"><i class="material-icons small">extension</i> PuZZleDucK <i class="material-icons small right">extension</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <!-- Dropdown Trigger -->
+             <li><a class="dropdown-button" href="#!" data-activates="dropDown"><i class="material-icons right">menu</i></a></li>
+          </ul>
+       </div>
+    </nav>
+    <h4 class="white-text center">The projects and ponderings of Ben Minerds</h4>
   </div>
 
 
 
+  <div class="row">
 
 
 
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<footer class="page-footer purple darken-3">
-   <div class="row">
-      <div class="col s12 m6 l6">
-         <h5 class="white-text">Footer Content</h5>
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">account_balance</i> - Code for Australia</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/CfA_Logo_black.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Code for Australia Project Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Saying something about this link</p>
+            <a href="https://github.com/CodeforAustralia/dtf-genesis"> Source Code</a>
+          </div>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Saying something about this link</p>
+            <a href="http://dtf-genesis.herokuapp.com/"> Deployed Version</a>
+          </div>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Saying something about this link</p>
+            <a href="https://codeforaustralia.github.io/DTF-Blog/"> Blog and documentation</a>
+          </div>
+        </div>
       </div>
-      <div class="col s12 m6 l6">
-        <ul>
-            <li><a href="#" class="grey-text text-lighten-4 right">About</a></li> <br />
-            <li><a href="#" class="grey-text text-lighten-4 right">Contact</a></li>
-         </ul>
+    </div>
+
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">cast</i> - Free Software Melbourne</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://www.softwarefreedomday.org/countdown/banner1-UTC-4-en.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Gnews presentations</p>
+            <ul>
+              <li><a href="FSM/2015/06/gnews.html"> June 2015 Gnews</a></li>
+              <li><a href="FSM/2015/07/gnews.md"> July 2015 Gnews</a></li>
+            </ul>
+          </div>
+          <div class="card brown darken-4 z-depth-3">
+            <p>LINK_TEXT</p>
+            <a href="FSM/">General FSM media</a>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="footer-copyright">
-      <div class="container">
-         © 2017 PuZZleDucK
-         <a class="grey-text text-lighten-4 right" href="#!">Mailto link</a>
+    </div>
+
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - Linux Kernel</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/tux.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Blogs</p>
+            <ul>
+              <li><a href="Linux/linux01.html"> Linux Work 01 - Intro/Resourses</a></li>
+              <li><a href="Linux/linux02.html"> Linux Work 02 - Belkin Serial Patch</a></li>
+              <li><a href="Linux/linux03.html"> Linux Work 03 - Keyspan Serial Patch</a></li>
+              <li><a href="Linux/linux04.html"> Linux Work 04 - Documentation Fix</a></li>
+              <li><a href="Linux/linux05.html"> Linux Work 05 - Eudyptula Challenge</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-   </div>
-</footer>
+    </div>
 
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - Electronics &amp; Hardware</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/hardware.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Instructables</p>
+            <ul>
+              <li><a href="http://www.instructables.com/id/8-Bit-Arduino-Valentines-Heart/"> Instructable: 8-Bit Arduino Heart</a></li>
+              <li><a href="http://www.instructables.com/id/-Arduinolitics-Google-Analytics-on-Arduino/"> Arduinolitics - Analytics on Arduino</a></li>
+            </ul>
+          </div>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Thingiverse</p>
+            <ul>
+              <li><a href="http://www.thingiverse.com/thing:121099"> Open Hardware Logo - PCB Vice</a></li>
+              <li><a href="http://www.thingiverse.com/thing:236948"> Electronics - Freetronics LeoStick bumper/header</a></li>
+              <li><a href="http://www.thingiverse.com/thing:225255"> Electronics - DIY Header Pins</a></li>
+              <li><a href="http://www.thingiverse.com/thing:180982"> Electronics - DIY led diffuser</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - The RepWeb</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/reprap.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>LINK_TEXT</p>
+            <ul>
+              <li><a href="RepRap/RepLogForm.html"> RepRap Live Log Entry Form (The InternetOfThingiverse)</a></li>
+              <li><a href="RepRap/index.html"> RepRap Network Pages</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - Javascript</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="IMAGE_SOURCE" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>D3 Projects</p>
+            <a href="HTML5/D3/character-frequency/CharacterFrequency.html">D3: Live Caracter Frequency Analysis</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - Hackathon Projects</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/gnu.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Govhack</p>
+            <a href="http://threeletternames.github.io/GovHack2015/">GovHack: Exploring Indigenous Culture</a>
+          </div>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Random Hacks of Kindness</p>
+            <a href="https://rhokaustralia.github.io/melb-maker-map/index.html">RHoK: Melbourne Maker Map</a>
+          </div>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Budgethack</p>
+            <a href="#"> FIRST_LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - Java &amp; Android</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/duke.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Blogs</p>
+            <ul>
+              <li><a href="DevAdventures/da01.html"> 01 - Orbital Live Wallpaper</a></li>
+              <li><a href="DevAdventures/da02.html"> 02 - Data retention</a></li>
+              <li><a href="DevAdventures/da03.html"> 03 - XDA Developers "BASH Obsfucation Contest" entry</a></li>
+              <li><a href="DevAdventures/da04.html"> 04 - Embedding page data in a link</a></li>
+              <li><a href="DevAdventures/da05.html"> 05 - Gosling nightmares</a></li>
+              <li><a href="DevAdventures/da06.html"> 06 - Git yourself a schooling</a></li>
+              <li><a href="DevAdventures/da07.html"> 07 - An Array without bounds (more Gosling nightmares)</a></li>
+              <li><a href="DevAdventures/da08.html"> 08 - Lambdas and LEDs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - 3D Designs</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/openscad.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Thingiverse</p>
+            <ul>
+              <li><a href="http://www.thingiverse.com/thing:247649"> Robjects - Toyota headrest mount (Diesel powered Arduino!)</a></li>
+              <li><a href="http://www.thingiverse.com/thing:240652"> Toyota headrest camera mount</a></li>
+              <li><a href="http://www.thingiverse.com/thing:246633"> Valentines - 8 Bit Arduino Heart</a></li>
+              <li><a href="http://www.thingiverse.com/thing:225261"> OpenScad Top Hat</a></li>
+              <li><a href="http://www.thingiverse.com/thing:156052"> Font - Kirsty</a></li>
+              <li><a href="http://www.thingiverse.com/thing:149838"> The Castle Back To School Set</a></li>
+              <li><a href="http://www.thingiverse.com/thing:140495"> Steampunk Glasses Lense Mod</a></li>
+              <li><a href="http://www.thingiverse.com/thing:130875"> Fluid Circuit - Caterpillar/Bug/Bee</a></li>
+              <li><a href="http://www.thingiverse.com/thing:114084"> Festive Cracker Printability and Scale Mod</a></li>
+              <li><a href="http://www.thingiverse.com/thing:140519"> Printable Signal White Cane</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<ul class="white-text">
-  <li>
-    <span class="red lighten-5">light 5</span>
-    <span class="red lighten-4">light 4</span>
-    <span class="red lighten-3">light 3</span>
-    <span class="red lighten-2">light 2</span>
-    <span class="red lighten-1">light 1</span>
-    <span class="red">neutral</span>
-    <span class="red darken-1">dark 1</span>
-    <span class="red darken-2">dark 2</span>
-    <span class="red darken-3">dark 3</span>
-    <span class="red darken-4">dark 4</span>
-    <span class="red">neutral</span>
-    <span class="red accent-1">accent 1</span>
-    <span class="red accent-2">accent 2</span>
-    <span class="red accent-3">accent 3</span>
-    <span class="red accent-4">accent 4</span> red
-  </li>
-  <li>
-    <span class="pink lighten-5">light 5</span>
-    <span class="pink lighten-4">light 4</span>
-    <span class="pink lighten-3">light 3</span>
-    <span class="pink lighten-2">light 2</span>
-    <span class="pink lighten-1">light 1</span>
-    <span class="pink">neutral</span>
-    <span class="pink darken-1">dark 1</span>
-    <span class="pink darken-2">dark 2</span>
-    <span class="pink darken-3">dark 3</span>
-    <span class="pink darken-4">dark 4</span>
-    <span class="pink">neutral</span>
-    <span class="pink accent-1">accent 1</span>
-    <span class="pink accent-2">accent 2</span>
-    <span class="pink accent-3">accent 3</span>
-    <span class="pink accent-4">accent 4</span> pink
-  </li>
-  <li>
-    <span class="purple lighten-5">light 5</span>
-    <span class="purple lighten-4">light 4</span>
-    <span class="purple lighten-3">light 3</span>
-    <span class="purple lighten-2">light 2</span>
-    <span class="purple lighten-1">light 1</span>
-    <span class="purple">neutral</span>
-    <span class="purple darken-1">dark 1</span>
-    <span class="purple darken-2">dark 2</span>
-    <span class="purple darken-3">dark 3</span>
-    <span class="purple darken-4">dark 4</span>
-    <span class="purple">neutral</span>
-    <span class="purple accent-1">accent 1</span>
-    <span class="purple accent-2">accent 2</span>
-    <span class="purple accent-3">accent 3</span>
-    <span class="purple accent-4">accent 4</span> purple
-  </li>
-  <li>
-    <span class="deep-purple lighten-5">light 5</span>
-    <span class="deep-purple lighten-4">light 4</span>
-    <span class="deep-purple lighten-3">light 3</span>
-    <span class="deep-purple lighten-2">light 2</span>
-    <span class="deep-purple lighten-1">light 1</span>
-    <span class="deep-purple">neutral</span>
-    <span class="deep-purple darken-1">dark 1</span>
-    <span class="deep-purple darken-2">dark 2</span>
-    <span class="deep-purple darken-3">dark 3</span>
-    <span class="deep-purple darken-4">dark 4</span>
-    <span class="deep-purple">neutral</span>
-    <span class="deep-purple accent-1">accent 1</span>
-    <span class="deep-purple accent-2">accent 2</span>
-    <span class="deep-purple accent-3">accent 3</span>
-    <span class="deep-purple accent-4">accent 4</span> deep-purple
-  </li>
-  <li>
-    <span class="indigo lighten-5">light 5</span>
-    <span class="indigo lighten-4">light 4</span>
-    <span class="indigo lighten-3">light 3</span>
-    <span class="indigo lighten-2">light 2</span>
-    <span class="indigo lighten-1">light 1</span>
-    <span class="indigo">neutral</span>
-    <span class="indigo darken-1">dark 1</span>
-    <span class="indigo darken-2">dark 2</span>
-    <span class="indigo darken-3">dark 3</span>
-    <span class="indigo darken-4">dark 4</span>
-    <span class="indigo">neutral</span>
-    <span class="indigo accent-1">accent 1</span>
-    <span class="indigo accent-2">accent 2</span>
-    <span class="indigo accent-3">accent 3</span>
-    <span class="indigo accent-4">accent 4</span> indigo
-  </li>
-  <li>
-    <span class="blue lighten-5">light 5</span>
-    <span class="blue lighten-4">light 4</span>
-    <span class="blue lighten-3">light 3</span>
-    <span class="blue lighten-2">light 2</span>
-    <span class="blue lighten-1">light 1</span>
-    <span class="blue">neutral</span>
-    <span class="blue darken-1">dark 1</span>
-    <span class="blue darken-2">dark 2</span>
-    <span class="blue darken-3">dark 3</span>
-    <span class="blue darken-4">dark 4</span>
-    <span class="blue">neutral</span>
-    <span class="blue accent-1">accent 1</span>
-    <span class="blue accent-2">accent 2</span>
-    <span class="blue accent-3">accent 3</span>
-    <span class="blue accent-4">accent 4</span> blue
-  </li>
-  <li>
-    <span class="light-blue lighten-5">light 5</span>
-    <span class="light-blue lighten-4">light 4</span>
-    <span class="light-blue lighten-3">light 3</span>
-    <span class="light-blue lighten-2">light 2</span>
-    <span class="light-blue lighten-1">light 1</span>
-    <span class="light-blue">neutral</span>
-    <span class="light-blue darken-1">dark 1</span>
-    <span class="light-blue darken-2">dark 2</span>
-    <span class="light-blue darken-3">dark 3</span>
-    <span class="light-blue darken-4">dark 4</span>
-    <span class="light-blue">neutral</span>
-    <span class="light-blue accent-1">accent 1</span>
-    <span class="light-blue accent-2">accent 2</span>
-    <span class="light-blue accent-3">accent 3</span>
-    <span class="light-blue accent-4">accent 4</span> light-blue
-  </li>
-  <li>
-    <span class="cyan lighten-5">light 5</span>
-    <span class="cyan lighten-4">light 4</span>
-    <span class="cyan lighten-3">light 3</span>
-    <span class="cyan lighten-2">light 2</span>
-    <span class="cyan lighten-1">light 1</span>
-    <span class="cyan">neutral</span>
-    <span class="cyan darken-1">dark 1</span>
-    <span class="cyan darken-2">dark 2</span>
-    <span class="cyan darken-3">dark 3</span>
-    <span class="cyan darken-4">dark 4</span>
-    <span class="cyan">neutral</span>
-    <span class="cyan accent-1">accent 1</span>
-    <span class="cyan accent-2">accent 2</span>
-    <span class="cyan accent-3">accent 3</span>
-    <span class="cyan accent-4">accent 4</span> cyan
-  </li>
-  <li>
-    <span class="teal lighten-5">light 5</span>
-    <span class="teal lighten-4">light 4</span>
-    <span class="teal lighten-3">light 3</span>
-    <span class="teal lighten-2">light 2</span>
-    <span class="teal lighten-1">light 1</span>
-    <span class="teal">neutral</span>
-    <span class="teal darken-1">dark 1</span>
-    <span class="teal darken-2">dark 2</span>
-    <span class="teal darken-3">dark 3</span>
-    <span class="teal darken-4">dark 4</span>
-    <span class="teal">neutral</span>
-    <span class="teal accent-1">accent 1</span>
-    <span class="teal accent-2">accent 2</span>
-    <span class="teal accent-3">accent 3</span>
-    <span class="teal accent-4">accent 4</span> teal
-  </li>
-  <li>
-    <span class="green lighten-5">light 5</span>
-    <span class="green lighten-4">light 4</span>
-    <span class="green lighten-3">light 3</span>
-    <span class="green lighten-2">light 2</span>
-    <span class="green lighten-1">light 1</span>
-    <span class="green">neutral</span>
-    <span class="green darken-1">dark 1</span>
-    <span class="green darken-2">dark 2</span>
-    <span class="green darken-3">dark 3</span>
-    <span class="green darken-4">dark 4</span>
-    <span class="green">neutral</span>
-    <span class="green accent-1">accent 1</span>
-    <span class="green accent-2">accent 2</span>
-    <span class="green accent-3">accent 3</span>
-    <span class="green accent-4">accent 4</span> green
-  </li>
-  <li>
-    <span class="light-green lighten-5">light 5</span>
-    <span class="light-green lighten-4">light 4</span>
-    <span class="light-green lighten-3">light 3</span>
-    <span class="light-green lighten-2">light 2</span>
-    <span class="light-green lighten-1">light 1</span>
-    <span class="light-green">neutral</span>
-    <span class="light-green darken-1">dark 1</span>
-    <span class="light-green darken-2">dark 2</span>
-    <span class="light-green darken-3">dark 3</span>
-    <span class="light-green darken-4">dark 4</span>
-    <span class="light-green">neutral</span>
-    <span class="light-green accent-1">accent 1</span>
-    <span class="light-green accent-2">accent 2</span>
-    <span class="light-green accent-3">accent 3</span>
-    <span class="light-green accent-4">accent 4</span> light-green
-  </li>
-  <li>
-    <span class="lime lighten-5">light 5</span>
-    <span class="lime lighten-4">light 4</span>
-    <span class="lime lighten-3">light 3</span>
-    <span class="lime lighten-2">light 2</span>
-    <span class="lime lighten-1">light 1</span>
-    <span class="lime">neutral</span>
-    <span class="lime darken-1">dark 1</span>
-    <span class="lime darken-2">dark 2</span>
-    <span class="lime darken-3">dark 3</span>
-    <span class="lime darken-4">dark 4</span>
-    <span class="lime">neutral</span>
-    <span class="lime accent-1">accent 1</span>
-    <span class="lime accent-2">accent 2</span>
-    <span class="lime accent-3">accent 3</span>
-    <span class="lime accent-4">accent 4</span> lime
-  </li>
-  <li>
-    <span class="yellow lighten-5">light 5</span>
-    <span class="yellow lighten-4">light 4</span>
-    <span class="yellow lighten-3">light 3</span>
-    <span class="yellow lighten-2">light 2</span>
-    <span class="yellow lighten-1">light 1</span>
-    <span class="yellow">neutral</span>
-    <span class="yellow darken-1">dark 1</span>
-    <span class="yellow darken-2">dark 2</span>
-    <span class="yellow darken-3">dark 3</span>
-    <span class="yellow darken-4">dark 4</span>
-    <span class="yellow">neutral</span>
-    <span class="yellow accent-1">accent 1</span>
-    <span class="yellow accent-2">accent 2</span>
-    <span class="yellow accent-3">accent 3</span>
-    <span class="yellow accent-4">accent 4</span> yellow
-  </li>
-  <li>
-    <span class="amber lighten-5">light 5</span>
-    <span class="amber lighten-4">light 4</span>
-    <span class="amber lighten-3">light 3</span>
-    <span class="amber lighten-2">light 2</span>
-    <span class="amber lighten-1">light 1</span>
-    <span class="amber">neutral</span>
-    <span class="amber darken-1">dark 1</span>
-    <span class="amber darken-2">dark 2</span>
-    <span class="amber darken-3">dark 3</span>
-    <span class="amber darken-4">dark 4</span>
-    <span class="amber">neutral</span>
-    <span class="amber accent-1">accent 1</span>
-    <span class="amber accent-2">accent 2</span>
-    <span class="amber accent-3">accent 3</span>
-    <span class="amber accent-4">accent 4</span> amber
-  </li>
-  <li>
-    <span class="orange lighten-5">light 5</span>
-    <span class="orange lighten-4">light 4</span>
-    <span class="orange lighten-3">light 3</span>
-    <span class="orange lighten-2">light 2</span>
-    <span class="orange lighten-1">light 1</span>
-    <span class="orange">neutral</span>
-    <span class="orange darken-1">dark 1</span>
-    <span class="orange darken-2">dark 2</span>
-    <span class="orange darken-3">dark 3</span>
-    <span class="orange darken-4">dark 4</span>
-    <span class="orange">neutral</span>
-    <span class="orange accent-1">accent 1</span>
-    <span class="orange accent-2">accent 2</span>
-    <span class="orange accent-3">accent 3</span>
-    <span class="orange accent-4">accent 4</span> orange
-  </li>
-  <li>
-    <span class="deep-orange lighten-5">light 5</span>
-    <span class="deep-orange lighten-4">light 4</span>
-    <span class="deep-orange lighten-3">light 3</span>
-    <span class="deep-orange lighten-2">light 2</span>
-    <span class="deep-orange lighten-1">light 1</span>
-    <span class="deep-orange">neutral</span>
-    <span class="deep-orange darken-1">dark 1</span>
-    <span class="deep-orange darken-2">dark 2</span>
-    <span class="deep-orange darken-3">dark 3</span>
-    <span class="deep-orange darken-4">dark 4</span>
-    <span class="deep-orange">neutral</span>
-    <span class="deep-orange accent-1">accent 1</span>
-    <span class="deep-orange accent-2">accent 2</span>
-    <span class="deep-orange accent-3">accent 3</span>
-    <span class="deep-orange accent-4">accent 4</span> deep-orange
-  </li>
-  <li>
-    <span class="brown lighten-5">light 5</span>
-    <span class="brown lighten-4">light 4</span>
-    <span class="brown lighten-3">light 3</span>
-    <span class="brown lighten-2">light 2</span>
-    <span class="brown lighten-1">light 1</span>
-    <span class="brown">neutral</span>
-    <span class="brown darken-1">dark 1</span>
-    <span class="brown darken-2">dark 2</span>
-    <span class="brown darken-3">dark 3</span>
-    <span class="brown darken-4">dark 4</span>
-    <span class="brown">neutral</span>
-    <span class="brown accent-1">accent 1</span>
-    <span class="brown accent-2">accent 2</span>
-    <span class="brown accent-3">accent 3</span>
-    <span class="brown accent-4">accent 4</span> brown
-  </li>
-  <li>
-    <span class="grey lighten-5">light 5</span>
-    <span class="grey lighten-4">light 4</span>
-    <span class="grey lighten-3">light 3</span>
-    <span class="grey lighten-2">light 2</span>
-    <span class="grey lighten-1">light 1</span>
-    <span class="grey">neutral</span>
-    <span class="grey darken-1">dark 1</span>
-    <span class="grey darken-2">dark 2</span>
-    <span class="grey darken-3">dark 3</span>
-    <span class="grey darken-4">dark 4</span>
-    <span class="grey">neutral</span>
-    <span class="grey accent-1">accent 1</span>
-    <span class="grey accent-2">accent 2</span>
-    <span class="grey accent-3">accent 3</span>
-    <span class="grey accent-4">accent 4</span> grey
-  </li>
-  <li>
-    <span class="blue-grey lighten-5">light 5</span>
-    <span class="blue-grey lighten-4">light 4</span>
-    <span class="blue-grey lighten-3">light 3</span>
-    <span class="blue-grey lighten-2">light 2</span>
-    <span class="blue-grey lighten-1">light 1</span>
-    <span class="blue-grey">neutral</span>
-    <span class="blue-grey darken-1">dark 1</span>
-    <span class="blue-grey darken-2">dark 2</span>
-    <span class="blue-grey darken-3">dark 3</span>
-    <span class="blue-grey darken-4">dark 4</span>
-    <span class="blue-grey">neutral</span>
-    <span class="blue-grey accent-1">accent 1</span>
-    <span class="blue-grey accent-2">accent 2</span>
-    <span class="blue-grey accent-3">accent 3</span>
-    <span class="blue-grey accent-4">accent 4</span> blue-grey
-  </li>
-  <li>
-    <span class="black lighten-5">light 5</span>
-    <span class="black lighten-4">light 4</span>
-    <span class="black lighten-3">light 3</span>
-    <span class="black lighten-2">light 2</span>
-    <span class="black lighten-1">light 1</span>
-    <span class="black">neutral</span>
-    <span class="black darken-1">dark 1</span>
-    <span class="black darken-2">dark 2</span>
-    <span class="black darken-3">dark 3</span>
-    <span class="black darken-4">dark 4</span>
-    <span class="black">neutral</span>
-    <span class="black accent-1">accent 1</span>
-    <span class="black accent-2">accent 2</span>
-    <span class="black accent-3">accent 3</span>
-    <span class="black accent-4">accent 4</span> black
-  </li>
-  <li>
-    <span class="white lighten-5">light 5</span>
-    <span class="white lighten-4">light 4</span>
-    <span class="white lighten-3">light 3</span>
-    <span class="white lighten-2">light 2</span>
-    <span class="white lighten-1">light 1</span>
-    <span class="white">neutral</span>
-    <span class="white darken-1">dark 1</span>
-    <span class="white darken-2">dark 2</span>
-    <span class="white darken-3">dark 3</span>
-    <span class="white darken-4">dark 4</span>
-    <span class="white">neutral</span>
-    <span class="white accent-1">accent 1</span>
-    <span class="white accent-2">accent 2</span>
-    <span class="white accent-3">accent 3</span>
-    <span class="white accent-4">accent 4</span> white
-  </li>
-  <li>
-    <span class="transparent lighten-5">light 5</span>
-    <span class="transparent lighten-4">light 4</span>
-    <span class="transparent lighten-3">light 3</span>
-    <span class="transparent lighten-2">light 2</span>
-    <span class="transparent lighten-1">light 1</span>
-    <span class="transparent">neutral</span>
-    <span class="transparent darken-1">dark 1</span>
-    <span class="transparent darken-2">dark 2</span>
-    <span class="transparent darken-3">dark 3</span>
-    <span class="transparent darken-4">dark 4</span>
-    <span class="transparent">neutral</span>
-    <span class="transparent accent-1">accent 1</span>
-    <span class="transparent accent-2">accent 2</span>
-    <span class="transparent accent-3">accent 3</span>
-    <span class="transparent accent-4">accent 4</span> transparent
-  </li>
-</ul>
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - Freedom of Information</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="IMAGE_SOURCE" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>Requests</p>
+            <ul>
+              <li><a href="https://www.righttoknow.org.au/request/source_code_of_computercount#incoming-8888">Source code of "ComputerCount"</a></li>
+              <li><a href="https://www.righttoknow.org.au/request/documents_relating_to_implementi#outgoing-6463">Documents relating to implementing e-voting in Victoria</a></li>
+              <li><a href="https://www.righttoknow.org.au/request/contracts_published_on_tenders_v#outgoing-6382">Contracts Published on Tenders Vic</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - Haskell</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="IMAGE_SOURCE" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">REVEAL_TITLE_Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>LINK_TEXT</p>
+            <a href="#"> FIRST_LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - Testing</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="IMAGE_SOURCE" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">REVEAL_TITLE_Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>LINK_TEXT</p>
+            <a href="#"> FIRST_LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- TEMPLATE
+    <div class="col s12 m6">
+      <div class="card brown darken-4 z-depth-3 activator waves-effect waves-block waves-dark">
+        <div class="card-title center activator">
+          <h3 class="activator"><i class="material-icons small">alarm</i> - FILLER_TITLE</h3>
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="IMAGE_SOURCE" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal orange darken-3">
+          <span class="card-title white-text text-darken-4">REVEAL_TITLE_Links:<i class="material-icons right">close</i></span>
+          <div class="card brown darken-4 z-depth-3">
+            <p>LINK_TEXT</p>
+            <a href="#"> FIRST_LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ -->
 
 
 
@@ -510,68 +400,57 @@
 
 
 
-  <div class="middle"> <H2>Linux</H2> <ul>
-    <img src="img/tux.png" alt="linux-tux image" width="10%" align="right" /> <br />
-    <li><a href="Linux/linux01.html"> Linux Work 01 - Intro/Resourses</a></li>
-    <li><a href="Linux/linux02.html"> Linux Work 02 - Belkin Serial Patch</a></li>
-    <li><a href="Linux/linux03.html"> Linux Work 03 - Keyspan Serial Patch</a></li>
-    <li><a href="Linux/linux04.html"> Linux Work 04 - Documentation Fix</a></li>
-    <li><a href="Linux/linux05.html"> Linux Work 05 - Eudyptula Challenge</a></li>
-  </ul></DIV>
-
-  <div class="middle"> <H2>Electronics / Hardware</H2> <img src="img/hardware.png" alt="open hardware image" width="10%" align="right"/> <ul>
-    <li><a href="http://www.instructables.com/id/8-Bit-Arduino-Valentines-Heart/"> Instructable: 8-Bit Arduino Heart</a></li>
-    <li><a href="http://www.instructables.com/id/-Arduinolitics-Google-Analytics-on-Arduino/"> Arduinolitics - Analytics on Arduino</a></li>
-    <li><a href="http://www.thingiverse.com/thing:121099"> Open Hardware Logo - PCB Vice</a></li>
-    <li><a href="http://www.thingiverse.com/thing:236948"> Electronics - Freetronics LeoStick bumper/header</a></li>
-    <li><a href="http://www.thingiverse.com/thing:225255"> Electronics - DIY Header Pins</a></li>
-    <li><a href="http://www.thingiverse.com/thing:180982"> Electronics - DIY led diffuser</a></li>
-  </ul></DIV>
-
-  <div class="middle"> <H2>The RepWeb</H2> <img src="img/reprap.png" alt="reprap image" width="10%" align="right" />  <ul>
-    <li><a href="RepRap/RepLogForm.html"> RepRap Live Log Entry Form (The InternetOfThingiverse)</a></li>
-    <li><a href="RepRap/index.html"> RepRap Network Pages</a></li>
-  </ul></DIV>
-
-  <div class="middle"> <H2>Other Code</H2> <img src="img/gnu.png" alt="gnu image" width="10%" align="right" /> <ul>
-    <li><a href="HTML5/D3/character-frequency/CharacterFrequency.html">D3: Live Caracter Frequency Analysis</a></li>
-    <li><a href="http://threeletternames.github.io/GovHack2015/">GovHack: Exploring Indigenous Culture</a></li>
-    <li><a href="https://rhokaustralia.github.io/melb-maker-map/index.html">RHoK: Melbourne Maker Map</a></li>
-    <li>Other things go here</li>
-  </ul></DIV>
-
- </td>
- <td>
 
 
-  <div class="middle"> <H2>Java / Android</H2> <img src="img/duke.png" alt="java-duke image" width="10%" align="right" /> <ul>
-    <li><a href="DevAdventures/da01.html"> 01 - Orbital Live Wallpaper</a></li>
-    <li><a href="DevAdventures/da02.html"> 02 - Data retention</a></li>
-    <li><a href="DevAdventures/da03.html"> 03 - XDA Developers "BASH Obsfucation Contest" entry</a></li>
-    <li><a href="DevAdventures/da04.html"> 04 - Embedding page data in a link</a></li>
-    <li><a href="DevAdventures/da05.html"> 05 - Gosling nightmares</a></li>
-    <li><a href="DevAdventures/da06.html"> 06 - Git yourself a schooling</a></li>
-    <li><a href="DevAdventures/da07.html"> 07 - An Array without bounds (more Gosling nightmares)</a></li>
-    <li><a href="DevAdventures/da08.html"> 08 - Lambdas and LEDs</a></li>
-  </ul></DIV>
 
 
-  <div class="middle"> <H2>3D Designs</H2> <img src="img/openscad.png" alt="openscad image" width="10%" align="right" /> <ul>
-    <li><a href="http://www.thingiverse.com/thing:247649"> Robjects - Toyota headrest mount (Diesel powered Arduino!)</a></li>
-    <li><a href="http://www.thingiverse.com/thing:240652"> Toyota headrest camera mount</a></li>
-    <li><a href="http://www.thingiverse.com/thing:246633"> Valentines - 8 Bit Arduino Heart</a></li>
-    <li><a href="http://www.thingiverse.com/thing:225261"> OpenScad Top Hat</a></li>
-    <li><a href="http://www.thingiverse.com/thing:156052"> Font - Kirsty</a></li>
-    <li><a href="http://www.thingiverse.com/thing:149838"> The Castle Back To School Set</a></li>
-    <li><a href="http://www.thingiverse.com/thing:140495"> Steampunk Glasses Lense Mod</a></li>
-    <li><a href="http://www.thingiverse.com/thing:130875"> Fluid Circuit - Caterpillar/Bug/Bee</a></li>
-    <li><a href="http://www.thingiverse.com/thing:114084"> Festive Cracker Printability and Scale Mod</a></li>
-    <li><a href="http://www.thingiverse.com/thing:140519"> Printable Signal White Cane</a></li>
-  </ul></DIV>
 
- </td>
-</TR>
-</TABLE>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <footer class="page-footer orange darken-3">
+     <div class="row">
+        <div class="col s12 m6 l6">
+           <h5 class="white-text">Footer Content</h5>
+        </div>
+        <div class="col s12 m6 l6">
+          <ul>
+              <li><a href="#" class="grey-text text-lighten-4 right">About</a></li> <br />
+              <li><a href="#" class="grey-text text-lighten-4 right">Contact</a></li>
+           </ul>
+        </div>
+     </div>
+     <div class="footer-copyright">
+        <div class="container">
+           © 2017 PuZZleDucK
+           <a class="grey-text text-lighten-4 right" href="#!">Mailto link</a>
+        </div>
+     </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -613,3 +492,4 @@
 
 
 </body>
+</html>
