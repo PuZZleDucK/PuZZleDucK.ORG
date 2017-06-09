@@ -1,0 +1,235 @@
+# Free Software Melbourne
+
+Gnews 16th July 2015
+
+To build your own slides:
+
+````
+pandoc -t slidy -s gnews.md -o gnews.html
+        ^        ^           ^
+        |        |           \--- -o <OUTPUT>
+        \        \---- -s <SOURCE>
+         \---- -t <TEMPLATE> (slidy,slidez,dz___,,,)
+````
+
+And the formatting is:
+
+````
+# <Title>     Single hash and space for new page
+
+## <Title>    Double hash and space for new article - must be followed by blank line
+
+- <Text>        Dash and space for article text
+
+[<text>](<url>)           Square Brackets against Brackets for links
+````
+
+
+
+
+
+
+
+
+# Free Culture
+
+##  The Guardian artice by Richard Stallman
+
+- Malware is not only about viruses – companies preinstall it all the time
+- "The companies that sell malware are skilled at spinning the malfunctionalities as services to the consumer but they could offer most of these services with freedom and anonymity if they wanted to"
+
+
+
+## Choice TPP Campaign
+
+- Tell us what's in the TPP
+-Precomposed email
+- http://choice.good.do/tpp/save-our-health-laws-release-the-text/?utm_source=et&utm_medium=email&utm_content=Image&utm_campaign=TPPupdate-290715
+
+
+## FSF Campaign against Windows 10
+
+- Close Windows, Open Doors
+- https://www.fsf.org/news/the-fsfs-statement-on-windows-10
+- https://www.fsf.org/windows
+
+
+
+
+## French Government IT directorate supports ODF, rejects OOXML
+- maintains ODF as the recommended format for office documents within French administrations
+- referring to three MS office versions "it is however slighty different for these versions of Office than the definitive ISO standard"
+- "given an "under observation" status due to its complexity, its lack of openness (especially in the standard governance) and the strict respect of the standard"
+- https://www.april.org/en/french-government-it-directorate-stands-its-ground-odf-supported-ooxml-rejected
+
+
+
+
+## why secure communication is essential to a free society
+- Interview with Folker Bernitt (lead developer) of Pixelated
+- an open-source project to make user-friendly encrypted webmail accessible
+
+
+
+
+
+
+
+
+# Open Hardware
+
+
+## Fujitsu devices to come preloaded with open source OS
+
+-BOSS-MOOL is a freely distributable system which can be adopted for teaching courses and projects in operating systems
+-Android version is also being tested
+-enabling easy access of the software to students across academic institutions
+-http://timesofindia.indiatimes.com/city/chennai/Fujitsu-devices-to-come-preloaded-with-OS-developed-by-IIT-M-CDAC/articleshow/48022481.cms
+
+
+
+
+## Intel To Make Stephen Hawking's Computer System Open Source
+
+-The software platform is what Hawking uses in typing out his messages. He also uses this to select from given options already programmed in the system, move a mouse, and command the computer to produce the speech output.
+-http://www.cruxialcio.com/intel-make-stephen-hawkings-computer-system-open-source-10527
+
+
+
+
+## Canonical's policy unequivocally comply with the terms of the GNU General Public License (GPL) and other free software licenses. It does this by adding a "trump clause" that prevails in all situations possibly covered by the policy
+-"Ubuntu is an aggregate work of many works, each covered by their ownlicense(s). For the purposes of determining what you can do with specificworks in Ubuntu, this policy should be read together with the license(s) ofthe relevant packages. For the avoidance of doubt, where any other licensegrants rights, this policy does not modify or reduce those rights under thoselicenses"
+-Today's "trump clause" makes clear that, for example, Canonical's requirement that users recompile Ubuntu packages from source code before redistributing them is not intended to and does not override the GPL's explicit permission for users to redistribute covered packages in binary form (with no recompilation requirement) as long as they also provide the corresponding source.
+-https://sfconservancy.org/news/2015/jul/15/ubuntu-ip-policy/
+
+
+
+## Apple is Defective by Design
+-New FSF & DBD campaign
+-https://www.defectivebydesign.org/apple
+
+
+
+## FSF 30
+-If you happen to be in Boston
+-https://www.fsf.org/blogs/community/youre-invited-30th-birthday-party
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Open Business
+
+
+
+
+
+
+
+
+
+# Unfortunate Gnews
+
+
+
+
+
+## AT&T’s wifi hotspot  tampering with HTTP traffic
+- injecting advertising
+- legality of hotspot advertising injection is a messy subject
+- http://webpolicy.org/2015/08/25/att-hotspots-now-with-advertising-injection/
+
+
+
+
+
+
+
+
+
+# Releases
+
+
+
+## Turku backup soution
+- more cient focused and flexible
+- https://insights.ubuntu.com/2015/08/04/introducing-turku-cloud-friendly-backups-for-your-infrastructure/
+
+
+
+
+
+## Ddrescue-GUI released
+- simple (add a ppa) install
+- http://ubuntuportal.com/2015/08/ddrescue-gui-ubuntu.html
+
+
+
+
+## Core Infrastructure project launched
+- "A high score means that the project may not be getting the attention that it deserves and that it merits further investigation."
+- https://www.coreinfrastructure.org/programs/census-project
+- https://github.com/linuxfoundation/cii-census
+
+
+
+
+
+
+
+# Software Distribuition
+
+
+# Unusual Distro reviews
+
+-"PapyrOS is trying to adapt the material design language of Android into their brand new Linux distribution"
+- http://www.techdrivein.com/2015/08/the-strangest-most-unique-linux-distros.html
+
+
+
+# Bodhi Linux review
+- nice design
+- http://fossforce.com/2015/08/a-users-eye-view-of-bodhi-3-1-0-moksha/
+
+
+
+
+
+
+
+# Embedded / Cloud
+
+
+## FSF endorses ProteanOS
+- embedded GNU/Linux distro
+- includes and steers users toward exclusively free software
+- https://www.fsf.org/news/fsf-endorses-embedded-gnu-linux-distro-proteanos-as-fully-free
+
+
+
+
+# Things to do
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
