@@ -10,9 +10,9 @@ server {
 	location /share/403-forbidden.html {
 		internal; # deny direct access
 	}
-#	location /share/502-bad-gateway.html {
-#		internal; # deny direct access
-#	}
+	location /share/502-bad-gateway.html {
+		internal; # deny direct access
+	}
 
 	location /sub/ {
 		index NON_EXISTENT_FILE; # don't redirect to index
