@@ -6,9 +6,13 @@ server {
 	root /var/www/puzzleduck.org/test-html;
 	error_page 403 /share/403-forbidden.html;
 	error_page 404 /share/404-error.html;
+	error_page 502 /share/502-bad_gateway.html;
 	location /share/403-forbidden.html {
 		internal; # deny direct access
 	}
+#	location /share/502-bad_gateway.html {
+#		internal; # deny direct access
+#	}
 
 	location /sub/ {
 		index NON_EXISTENT_FILE; # don't redirect to index
