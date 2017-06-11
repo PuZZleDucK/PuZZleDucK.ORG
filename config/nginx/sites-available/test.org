@@ -31,11 +31,10 @@ server {
 		index index.php;
 	}
 
-	location /haskell/ {
-		fastcgi_pass http://localhost/home/user/haskell.fcgi;
-
-		index index.hs;
-	}
+#	location /haskell/ {
+#		fastcgi_pass http://localhost/home/user/haskell.fcgi;
+#		index index.hs;
+#	}
 
 	location / {
 		index index.html index.htm index.nginx-debian.html index.php;
