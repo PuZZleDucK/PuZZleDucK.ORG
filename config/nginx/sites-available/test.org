@@ -7,7 +7,7 @@ server {
 	error_page 403 /share/403-forbidden.html;
 	error_page 404 /share/404-error.html;
 	location /share/403-forbidden.html {
-		internal # deny direct access
+		internal; # deny direct access
 	}
 
 	location /sub/ {
