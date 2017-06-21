@@ -14,6 +14,8 @@ html {
 }
 
 .nav-wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
   align: center;
   overflow: hidden;
 }
