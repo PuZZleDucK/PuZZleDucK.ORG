@@ -21,12 +21,5 @@ html {
 
 .material-icons {
     display: inline-flex;
-    vertical-align: middle;
-}
-
-.nav-wrapper {
-    vertical-align: middle;
-}
-.nav {
-    vertical-align: middle;
+    vertical-align: bottom;
 }
