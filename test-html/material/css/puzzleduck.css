@@ -14,7 +14,7 @@ html {
 }
 
 .nav-wrapper {
-  height: 20%;
+  height: 20px;
   padding-bottom: 80px;
   margin-bottom: 20px;
   align: center;
@@ -23,15 +23,15 @@ html {
 
 .nav {
   align: center;
-	height: 20%;
+	height: 20px;
 	overflow: hidden;
 }
 
 .nav ul li {
-  height: 20%;
+  height: 20px;
     float: right;
 }
 
 .valign {
-  vertical-align: middle;
+  vertical-align: baseline;
 }
