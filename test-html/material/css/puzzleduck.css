@@ -18,3 +18,8 @@ html {
   margin-bottom: 20px;
   align: center;
 }
+
+.valign {
+  display: inline-flex;
+  vertical-align: middle;
+}
