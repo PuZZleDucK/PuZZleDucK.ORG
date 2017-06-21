@@ -20,10 +20,6 @@ html {
   overflow: hidden;
 }
 
-.brand-logo {
-  font-size: 15px;
-}
-
 .nav {
   align: center;
   overflow: hidden;
@@ -42,4 +38,8 @@ html {
     align-items: center;
     justify-content: center;
     vertical-align: middle !important;
+}
+
+nav .brand-logo {
+    font-size: 1.6rem;
 }
