@@ -18,3 +18,8 @@ html {
   margin-bottom: 20px;
   align: center;
 }
+
+div.mdl-layout__drawer > nav.mdl-navigation > a.mdl-navigation__link {
+    display: inline-flex;
+    vertical-align: middle;
+}
