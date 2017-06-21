@@ -43,3 +43,8 @@ html {
 nav .brand-logo {
     font-size: 4rem;
 }
+
+.no-pad {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
