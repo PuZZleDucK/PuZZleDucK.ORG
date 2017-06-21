@@ -23,3 +23,8 @@ html {
     display: inline-flex;
     vertical-align: middle;
 }
+
+.nav-wrapper {
+    display: inline-flex;
+    vertical-align: middle;
+}
