@@ -20,9 +20,9 @@ html {
 }
 
 .nav {
-  margin-top: 7px;
-  padding-top: 7px;
   align: center;
+	height:auto;
+	overflow: hidden;
 }
 
 .nav ul li {
