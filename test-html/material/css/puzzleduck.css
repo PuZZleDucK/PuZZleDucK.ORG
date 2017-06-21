@@ -25,7 +25,9 @@ html {
   align: center;
 }
 
-
+.nav ul li {
+    float: right;
+}
 
 .valign {
   vertical-align: middle;
