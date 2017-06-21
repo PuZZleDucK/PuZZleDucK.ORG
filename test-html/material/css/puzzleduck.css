@@ -14,22 +14,17 @@ html {
 }
 
 .nav-wrapper {
-  height: 20px;
-  padding-bottom: 80px;
-  margin-bottom: 20px;
   align: center;
   overflow: hidden;
 }
 
 .nav {
   align: center;
-	height: 20px;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .nav ul li {
-  height: 20px;
-    float: right;
+  float: right;
 }
 
 .valign {
