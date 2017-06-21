@@ -20,6 +20,10 @@ html {
   overflow: hidden;
 }
 
+.brand-logo {
+  font-size: 15px;
+}
+
 .nav {
   align: center;
   overflow: hidden;
