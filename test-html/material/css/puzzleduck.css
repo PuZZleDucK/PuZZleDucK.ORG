@@ -29,8 +29,9 @@ html {
 }
 
 .dropdown-content {
-  height: 100%;
+  overflow: visible;
 }
+
 .flow-text {
   font-size: 15px;
 }
