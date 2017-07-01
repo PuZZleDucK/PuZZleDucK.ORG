@@ -24,6 +24,10 @@ html {
   padding: 5px;
 }
 
+.row {
+  margin: 5px;
+}
+
 .flow-text {
   font-size: 15px;
 }
