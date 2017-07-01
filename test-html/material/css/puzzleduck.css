@@ -44,6 +44,7 @@ html {
 
 .nav {
   align: center;
+  overflow: visible;
 }
 
 .nav ul li {
