@@ -13,8 +13,15 @@ html {
   margin-top: 0px;
   margin-bottom: 5px;
   padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
+}
+
+.page-footer {
+  padding: 5px;
+}
+
+.footer-copyright {
+  padding: 5px;
 }
 
 .flow-text {
