@@ -12,6 +12,7 @@ html {
 .card-panel {
   margin-top: 0px;
   margin-bottom: 5px;
+  padding: 10px;
 }
 
 .flow-text {
