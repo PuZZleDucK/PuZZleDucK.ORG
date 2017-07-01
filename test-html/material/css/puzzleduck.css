@@ -9,6 +9,11 @@ html {
   padding-right: 10px;
 }
 
+.card-panel {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
 .flow-text {
   font-size: 15px;
 }
