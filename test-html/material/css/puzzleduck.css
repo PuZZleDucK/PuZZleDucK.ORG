@@ -43,6 +43,7 @@ html {
 
 .nav {
   align: center;
+  overflow: none;
 }
 
 .nav ul li {
