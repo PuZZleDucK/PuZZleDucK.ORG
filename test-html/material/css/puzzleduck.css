@@ -10,7 +10,8 @@
 }
 
 html {
-  font-family: 'Ubuntu';
+  font-family: "Kirsty";
+  src: url(http://www.princexml.com/fonts/larabie/kirsty.ttf) format("truetype");
 }
 
 .card {
