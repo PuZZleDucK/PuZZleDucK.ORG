@@ -1,12 +1,12 @@
 
 .primary{
-  color: #4E3200;
-  background-color: #329A00;
+  color: #4E3200 !important;
+  background-color: #329A00 !important;
 }
 
 .highlight{
-  color: #329A00;
-  background-color: #4E3200;
+  color: #329A00 !important;
+  background-color: #4E3200 !important;
 }
 
 html {
