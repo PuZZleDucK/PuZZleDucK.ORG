@@ -9,8 +9,13 @@
   background-color: #329A00 !important;
 }
 
-html {
+.title {
   font-family: "Kirsty";
+  src: url(http://www.princexml.com/fonts/larabie/kirsty.ttf) format("truetype");
+}
+
+html {
+  font-family: "Kirsty Regular";
   src: url(http://www.princexml.com/fonts/larabie/kirsty.ttf) format("truetype");
 }
 
