@@ -11,3 +11,7 @@ PuZZleDucK (Ben Minerds)
 - migrate previous content
 - updated during migration to Digital Ocean
 - added and updated nginx config
+- updated to material design - TODO:
+  - add hr's
+  - coptright text dark or bigger to match top
+  - darken shadow
