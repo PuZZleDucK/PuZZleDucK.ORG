@@ -1,3 +1,5 @@
+
+/* Colors */
 .primary{
   color: #FFF !important;
   background-color: #332000 !important;
@@ -8,6 +10,7 @@
   background-color: #329A00 !important;
 }
 
+/* Fonts */
 .title {
   font-family: Kirsty;
   src: url(../fonts/kirsty/kirsty-bd.ttf) format("truetype");
@@ -15,44 +18,12 @@
 
 html {
   font-family: Kirsty Regular;
-  src: url(http://www.princexml.com/fonts/larabie/kirsty.ttf) format("truetype");
+  src: url(../fonts/kirsty/kirsty-rg.ttf) format("truetype");
 }
 
-.card {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 10px;
-}
-
-.card-panel {
-  margin-top: 0px;
-  margin-bottom: 5px;
-  padding: 10px;
-  padding-bottom: 2px;
-}
-
-.page-footer {
-  padding: 2px;
-  font-size: 2rem;
-}
-
-.page-footer a:link { color: blue; }
-
-.footer-copyright {
-  padding: 2px;
-}
-
-.row {
-  margin: 5px;
-}
-
-.dropdown-content {
-  overflow: visible;
-}
-
-.flow-text {
-  font-size: 1rem;
+/* Title and Nav */
+nav .brand-logo {
+    font-size: 3rem;
 }
 
 .nav-wrapper {
@@ -69,6 +40,33 @@ html {
   float: right;
 }
 
+.dropdown-content {
+  overflow: visible;
+}
+
+/* Main Content */
+.card {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.card-panel {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 10px;
+  padding-bottom: 2px;
+}
+
+.row {
+  margin: 5px;
+}
+
+.flow-text {
+  font-size: 1rem;
+}
+
 .material-icons {
     display: inline-flex;
     align-items: center;
@@ -76,13 +74,23 @@ html {
     vertical-align: middle !important;
 }
 
-nav .brand-logo {
-    font-size: 3rem;
-}
-
 img {
   padding-top: 30px;
   padding-bottom: 2px;
   padding-left: 2px;
   padding-right: 2px;
+}
+
+/* Footer */
+.page-footer {
+  padding: 2px;
+  font-size: 1.2rem;
+}
+
+.page-footer a:link {
+  color: blue;
+}
+
+.footer-copyright {
+  padding: 2px;
 }
