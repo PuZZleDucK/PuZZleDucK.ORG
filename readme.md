@@ -15,5 +15,5 @@ PuZZleDucK (Ben Minerds)
   - [x] old version somewhere
   - [x] add hr's
   - [x] coptright text dark or bigger to match top
-  - [ ] darken shadow
-  - [ ] white background on logos
+  - [x] darken shadow
+  - [ ] white background on logos / image sizes
