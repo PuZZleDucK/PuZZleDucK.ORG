@@ -38,7 +38,7 @@ html {
   padding: 2px;
   font-size: 20px;
 }
-.page-footer a:visited { color: blue; }
+.page-footer a:link { color: blue; }
 
 .footer-copyright {
   padding: 2px;
