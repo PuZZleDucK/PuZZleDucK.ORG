@@ -32,8 +32,8 @@ server {
 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;
 	}
 
-	# cache images and css
-	location ~* \.(png|jpg|jpeg|css)$ {
+	# cache images, css and fonts
+	location ~* \.(png|jpg|jpeg|css|tff)$ {
 		expires 10d;
 	}
 
