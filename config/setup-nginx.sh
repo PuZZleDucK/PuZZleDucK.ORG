@@ -10,9 +10,9 @@ cp -vf /etc/nginx/nginx.conf /home/user/backups/"$STAMP"_nginx.conf
 
 echo
 echo ":: INSTALLING NEW CONFIG"
-sudo cp -vf config/nginx/sites-available/puzzleduck.org /etc/nginx/sites-available/puzzleduck.org
-sudo cp -vf config/nginx/sites-available/test.org /etc/nginx/sites-available/test.org
-sudo cp -vf config/nginx/nginx.conf /etc/nginx/nginx.conf
+sudo cp -vf /var/www/puzzleduck.org/config/nginx/sites-available/puzzleduck.org /etc/nginx/sites-available/puzzleduck.org
+sudo cp -vf /var/www/puzzleduck.org/config/nginx/sites-available/test.org /etc/nginx/sites-available/test.org
+sudo cp -vf /var/www/puzzleduck.org/config/nginx/nginx.conf /etc/nginx/nginx.conf
 
 echo
 echo ":: TESTING NGINX"
