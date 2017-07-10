@@ -12,6 +12,8 @@ PuZZleDucK (Ben Minerds)
 - updated during migration to Digital Ocean
 - added and updated nginx config
 - updated to material design - TODO:
+  - old version somewhere
   - add hr's
   - coptright text dark or bigger to match top
   - darken shadow
+  - white background on logos
