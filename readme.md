@@ -13,7 +13,7 @@ PuZZleDucK (Ben Minerds)
 - added and updated nginx config
 - updated to material design - TODO:
   - [x] old version somewhere
-  - [ ] add hr's
+  - [x] add hr's
   - [ ] coptright text dark or bigger to match top
   - [ ] darken shadow
   - [ ] white background on logos
