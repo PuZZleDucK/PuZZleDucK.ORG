@@ -14,6 +14,6 @@ PuZZleDucK (Ben Minerds)
 - updated to material design - TODO:
   - [x] old version somewhere
   - [x] add hr's
-  - [ ] coptright text dark or bigger to match top
+  - [x] coptright text dark or bigger to match top
   - [ ] darken shadow
   - [ ] white background on logos
