@@ -33,7 +33,7 @@ server {
 	}
 
 	# cache images, css and fonts
-	location ~* \.(png|jpg|jpeg|css|tff)$ {
+	location ~* \.(png|jpg|jpeg|css|ttf)$ {
 		expires 10d;
 	}
 
