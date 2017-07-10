@@ -69,10 +69,6 @@ html {
   float: right;
 }
 
-.valign {
-  vertical-align: baseline;
-}
-
 .material-icons {
     display: inline-flex;
     align-items: center;
