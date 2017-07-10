@@ -11,9 +11,13 @@
 }
 
 /* Fonts */
+@font-face {
+    font-family: Kirsty;
+    src: url(../fonts/kirsty/kirsty-bd.ttf) format("truetype");
+}
+
 .title {
   font-family: Kirsty;
-  src: url(../fonts/kirsty/kirsty-bd.ttf) format("truetype");
 }
 
 html {
