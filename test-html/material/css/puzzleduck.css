@@ -16,13 +16,17 @@
     src: url(../fonts/kirsty/kirsty-bd.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: KirstyRegular;
+    src: url(../fonts/kirsty/kirsty-rg.ttf) format("truetype");
+}
+
 .title {
   font-family: Kirsty;
 }
 
 html {
-  font-family: Kirsty Regular;
-  src: url(../fonts/kirsty/kirsty-rg.ttf) format("truetype");
+  font-family: KirstyRegular;
 }
 
 /* Title and Nav */
