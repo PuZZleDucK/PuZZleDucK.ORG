@@ -58,11 +58,11 @@ html {
 .nav-wrapper {
   padding-top: 0px;
   padding-bottom: 0px;
-  margin-left: 10px;
   align: center;
 }
 
 .nav {
+  margin-left: 10px;
   align: center;
 }
 
