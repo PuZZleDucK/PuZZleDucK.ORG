@@ -5,134 +5,467 @@
   <meta name="description" content="home page">
   <meta name="author" content="PuZZleDucK">
   <title>PuZZleDucK dot org</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/puzzleduck.css" media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
+<body class="white-text grey lighten-3">
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" defer></script>
+  <script type="text/javascript" src="js/materialize.min.js" defer></script>
 
-<body>
-
-<div class="header" align=CENTER>
-  <H1 align=CENTER>:: PuZZleDucK Industries ::</H1>
-  <H4 align=CENTER>... putting the DucKs back in Industry</H4>
-</div>
-
-<TABLE  class="equalDevide">
-<TR>
- <td>
-  <div class="middle"> <H2>Code for Australia</H2> <ul>
-    <img src="img/CfA_Logo_black.png" alt="Code for Australia logo" width="10%" align="right" /> <br />
-    <li><a href="https://github.com/CodeforAustralia/dtf-genesis"> Source Code</a></li>
-    <li><a href="http://dtf-genesis.herokuapp.com/"> Deployed Version</a></li>
-    <li><a href="https://codeforaustralia.github.io/DTF-Blog/"> Blog and documentation</a></li>
-  </ul></DIV>
-
-  <div class="middle"> <H2>Linux</H2> <ul>
-    <img src="img/tux.png" alt="linux-tux image" width="10%" align="right" /> <br />
-    <li><a href="Linux/linux01.html"> Linux Work 01 - Intro/Resourses</a></li>
-    <li><a href="Linux/linux02.html"> Linux Work 02 - Belkin Serial Patch</a></li>
-    <li><a href="Linux/linux03.html"> Linux Work 03 - Keyspan Serial Patch</a></li>
-    <li><a href="Linux/linux04.html"> Linux Work 04 - Documentation Fix</a></li>
-    <li><a href="Linux/linux05.html"> Linux Work 05 - Eudyptula Challenge</a></li>
-  </ul></DIV>
-
-  <div class="middle"> <H2>Electronics / Hardware</H2> <img src="img/hardware.png" alt="open hardware image" width="10%" align="right"/> <ul>
-    <li><a href="http://www.instructables.com/id/8-Bit-Arduino-Valentines-Heart/"> Instructable: 8-Bit Arduino Heart</a></li>
-    <li><a href="http://www.instructables.com/id/-Arduinolitics-Google-Analytics-on-Arduino/"> Arduinolitics - Analytics on Arduino</a></li>
-    <li><a href="http://www.thingiverse.com/thing:121099"> Open Hardware Logo - PCB Vice</a></li>
-    <li><a href="http://www.thingiverse.com/thing:236948"> Electronics - Freetronics LeoStick bumper/header</a></li>
-    <li><a href="http://www.thingiverse.com/thing:225255"> Electronics - DIY Header Pins</a></li>
-    <li><a href="http://www.thingiverse.com/thing:180982"> Electronics - DIY led diffuser</a></li>
-  </ul></DIV>
-
-  <div class="middle"> <H2>The RepWeb</H2> <img src="img/reprap.png" alt="reprap image" width="10%" align="right" />  <ul>
-    <li><a href="RepRap/RepLogForm.html"> RepRap Live Log Entry Form (The InternetOfThingiverse)</a></li>
-    <li><a href="RepRap/index.html"> RepRap Network Pages</a></li>
-  </ul></DIV>
-
-  <div class="middle"> <H2>Other Code</H2> <img src="img/gnu.png" alt="gnu image" width="10%" align="right" /> <ul>
-    <li><a href="HTML5/D3/character-frequency/CharacterFrequency.html">D3: Live Caracter Frequency Analysis</a></li>
-    <li><a href="http://threeletternames.github.io/GovHack2015/">GovHack: Exploring Indigenous Culture</a></li>
-    <li><a href="https://rhokaustralia.github.io/melb-maker-map/index.html">RHoK: Melbourne Maker Map</a></li>
-    <li>Other things go here</li>
-  </ul></DIV>
-
- </td>
- <td>
-
-  <div class="middle"> <H2>Free Software Melbourne</H2> <img src="img/fsf.png" alt="java-duke image" width="20%" align="right" />
-    <a href="http://www.softwarefreedomday.org/"><img src="http://www.softwarefreedomday.org/countdown/banner1-UTC-4-en.png" border="0" width="160" height="90" alt="Celebrate SFD with us on September 20, 2014!"></a>
-  <ul>
-    <li><a href="FSM/2015/06/gnews.html"> June 2015 Gnews</a></li>
-    <li><a href="FSM/2015/07/gnews.md"> July 2015 Gnews</a></li>
-    <li><a href="FSM/">General FSM media</a></li>
-  </ul></DIV>
-
-  <div class="middle"> <H2>Java / Android</H2> <img src="img/duke.png" alt="java-duke image" width="10%" align="right" /> <ul>
-    <li><a href="DevAdventures/da01.html"> 01 - Orbital Live Wallpaper</a></li>
-    <li><a href="DevAdventures/da02.html"> 02 - Data retention</a></li>
-    <li><a href="DevAdventures/da03.html"> 03 - XDA Developers "BASH Obsfucation Contest" entry</a></li>
-    <li><a href="DevAdventures/da04.html"> 04 - Embedding page data in a link</a></li>
-    <li><a href="DevAdventures/da05.html"> 05 - Gosling nightmares</a></li>
-    <li><a href="DevAdventures/da06.html"> 06 - Git yourself a schooling</a></li>
-    <li><a href="DevAdventures/da07.html"> 07 - An Array without bounds (more Gosling nightmares)</a></li>
-    <li><a href="DevAdventures/da08.html"> 08 - Lambdas and LEDs</a></li>
-  </ul></DIV>
-
-
-  <div class="middle"> <H2>3D Designs</H2> <img src="img/openscad.png" alt="openscad image" width="10%" align="right" /> <ul>
-    <li><a href="http://www.thingiverse.com/thing:247649"> Robjects - Toyota headrest mount (Diesel powered Arduino!)</a></li>
-    <li><a href="http://www.thingiverse.com/thing:240652"> Toyota headrest camera mount</a></li>
-    <li><a href="http://www.thingiverse.com/thing:246633"> Valentines - 8 Bit Arduino Heart</a></li>
-    <li><a href="http://www.thingiverse.com/thing:225261"> OpenScad Top Hat</a></li>
-    <li><a href="http://www.thingiverse.com/thing:156052"> Font - Kirsty</a></li>
-    <li><a href="http://www.thingiverse.com/thing:149838"> The Castle Back To School Set</a></li>
-    <li><a href="http://www.thingiverse.com/thing:140495"> Steampunk Glasses Lense Mod</a></li>
-    <li><a href="http://www.thingiverse.com/thing:130875"> Fluid Circuit - Caterpillar/Bug/Bee</a></li>
-    <li><a href="http://www.thingiverse.com/thing:114084"> Festive Cracker Printability and Scale Mod</a></li>
-    <li><a href="http://www.thingiverse.com/thing:140519"> Printable Signal White Cane</a></li>
-  </ul></DIV>
-
- </td>
-</TR>
-</TABLE>
+  <div class="col card-panel highlight title">
+    <ul id="dropDown" class="dropdown-content primary">
+       <li><a target="_blank" href="https://www.linkedin.com/in/puzzleduck">LinkedIn</a></li>
+       <li class="divider"></li>
+       <li><a target="_blank" href="https://github.com/PuZZleDucK">GitHub</a></li>
+       <li class="divider"></li>
+       <li><a target="_blank" href="https://twitter.com/_PuZZleDucK_">Twitter</a></li>
+       <li class="divider"></li>
+       <li><a target="_blank" href="https://play.google.com/store/apps/developer?id=PuZZleDucK+Industries.">Android</a></li>
+    </ul>
+    <nav>
+       <div class="nav-wrapper primary">
+          <a href="http://puzzleduck.org" class="brand-logo center">PuZZleDucK</a>
+          <ul id="nav-mobile" class="right">
+             <li style="width: 300px !important"><a class="dropdown-button" href="#!" data-activates="dropDown"><i class="material-icons right">menu</i></a></li> <!-- Dropdown Trigger -->
+          </ul>
+       </div>
+    </nav>
+    <h5 class="white-text center">The projects and ponderings of Ben Minerds</h5>
+  </div>
 
 
 
-  <div class="lower"><nav> <ul>
-    <table><tr><td>
-      <H2 align=CENTER>Other places</H2>
-      <H4 align=CENTER><a href="https://github.com/PuZZleDucK">GitHub</a></H4>
-      <H4 align=CENTER><a href="https://twitter.com/_PuZZleDucK_">Twitter</a></H4>
-      <H4 align=CENTER><a href="http://www.thingiverse.com/PuZZleDucK/designs/">Thingiverse account</a></H4>
-      <H4 align=CENTER><a href="http://www.instructables.com/member/PuZZleDucK/">Instructables</a></H4>
-    </td><td>
-      <H2 align=CENTER>Old places</H2>
-      <H4 align=CENTER><a href="http://code.google.com/u/PuZZleDucK/">GoogleCode</a></H4>
-      <H4 align=CENTER><a href="http://sourceforge.net/u/puzzleduck99/profile/">SourceForge</a></H4>
-      <H4 align=CENTER><a href="https://plus.google.com/111394115531877605652/posts">G+</a></H4>
-      <H4 align=CENTER><a href="https://play.google.com/store/apps/developer?id=PuZZleDucK+Industries.">Android</a></H4>
-      <H4 align=CENTER><a href="HTML5/mandel.html">Old HTML5 stuff</a></H4>
-      <H4 align=CENTER></H4>
-    </td></tr></table>
-  </ul></nav></div>
-
-
-  <aside id="handylinks">
-    <figure>
-      <img src="http://reprap.org/mediawiki/reprap_logo.png" alt="RepRap" />
-    </figure>
-    <H2 align=CENTER>Handy Links of the moment:</H2>
-    <p align=CENTER>Self replicating machines with:</p>
-    <H3 align=CENTER><a href="http://reprap.org/wiki/RepRap">RepRap Wiki</a></H3>
-    <p align=CENTER>Self replicating code with:</p>
-    <H3 align=CENTER><a href="http://www.javaspecialists.eu">Dr Heinz Max Kabutz</a></H3>
-  </aside>
+  <div class="row">
+    <div class="col s12 l4 cards-container">
 
 
 
-    <div class="footer">
-        <p>(c) Me &amp; GPL3.</p>
+
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">account_balance</i> - Code for Australia</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/CfA_Logo_black.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">Working with the Victorian Department of Treasury and Finance our team built a system for collecting contracting information from external sources, enabling a digital workflow for reporting and demonstrating agile methodologies ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">CfA Project Links:<i class="material-icons right">close</i></span>
+          <hr />
+          <div class="card primary z-depth-5">
+            <p>The final live project:</p>
+            <ul>
+              <li><a target="_blank" href="https://cfa-dtf.herokuapp.com/">Deployed Version</a></li>
+              <li><a target="_blank" href="https://codeforaustralia.github.io/DTF-Blog/">Blog and Documentation</a></li>
+              <li><a target="_blank" href="https://github.com/PuZZleDucK/dtf-genesis">Source Code</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Videos from the fellowship:</p>
+            <ul>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=ollXXTvfqrs">CfA at OK - Government Contracting Data</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=0useXG_KkSY">CfA and DTF - Showcase @ CityLab</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=qn5qyZksrSc">Linux Conf Au - Planning Alerts, State Contracts, then The World</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">cast</i> - Free Software Melbourne</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/fsf.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">I have been an organizer of Free Software Melbourne since 2013, I often present our regular Gnews segment, along with preparing outreach materials, and running events throughout the year ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <p>FSM Media</p>
+            <ul>
+              <li><a target="_blank" href="FSM/2017/hackathon-pamphlet.odt">Licencing Pamphlet for Hackathons </a></li>
+              <li><a target="_blank" href="FSM/2016/sfd-2016-flyer.png">2016 SFD Flyer</a></li>
+              <li><a target="_blank" href="FSM/2016/FOSS_in_Schools.odp">'FOSS in Schools' Presentation Slides</a></li>
+              <li><a target="_blank" href="FSM/2015/Wikipedia.odp">'Contribute to Wikipedia' Presentation Slides</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Gnews Presentations 2017</p>
+            <ul>
+              <li><a target="_blank" href="FSM/2017/06/gnews-2017-02-16.html">Feburary 2017 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2017/06/gnews-2017-03-16.html">March 2017 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2017/06/gnews-2017-04-20.html">April 2017 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2017/06/gnews-2017-05-18.html">May 2017 Gnews</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Gnews Presentations 2016</p>
+            <ul>
+              <li><a target="_blank" href="FSM/2016/gnews-2016-01-21.html">January 2016 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2016/gnews-2016-03-17.html">March 2016 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2016/gnews-2016-04-21.html">April 2016 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2016/gnews-2016-05-19.html">June 2016 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2016/gnews-2016-07-21.html">August 2016 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2016/gnews-2016-10-20.html">October 2016 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2016/gnews-2016-11-17.html">November 2016 Gnews</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Gnews Presentations 2015</p>
+            <ul>
+              <li><a target="_blank" href="FSM/2015/03/gnews.html">March 2015 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2015/04/gnews.html">April 2015 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2015/06/gnews.html">June 2015 Gnews</a></li>
+              <li><a target="_blank" href="FSM/2015/07/gnews.html">July 2015 Gnews</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">memory</i> - Linux Kernel</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/tux.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">I wanted to know how the nitty gritty of a FOSS system worked and the Linux kernel and the GNU environment were great projects to learn from. Contributing to the kernel has been a rewarding experience with many important lessons I have documented in blog posts ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Blogs:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <ul>
+              <li><a target="_blank" href="Linux/linux01.html">Linux Work 01 - Intro/Resourses</a></li>
+              <li><a target="_blank" href="Linux/linux02.html">Linux Work 02 - Belkin Serial Patch</a></li>
+              <li><a target="_blank" href="Linux/linux03.html">Linux Work 03 - Keyspan Serial Patch</a></li>
+              <li><a target="_blank" href="Linux/linux04.html">Linux Work 04 - Documentation Fix</a></li>
+              <li><a target="_blank" href="Linux/linux05.html">Linux Work 05 - Eudyptula Challenge</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">developer_board</i> - Electronics &amp; Hardware</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/hardware.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">Through my interest in 3D printing I began exploring electronics, and have developed a few 3D models that may be of use to the DIY electronics enthusiast. I also have a collection of videos documenting my successes in printing and building a 3D printer from scratch...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <p>3D Printer Videos</p>
+            <ul>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=xr2l0eG3TFc">Drilling</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=cpOK_zX9AQU">Plotting</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=4cRiBKrv83E">Cutting</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=ZRGilHL9rI0">Chocolate</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Instructables</p>
+            <ul>
+              <li><a target="_blank" href="http://www.instructables.com/id/8-Bit-Arduino-Valentines-Heart/">8-Bit Arduino Heart</a></li>
+              <li><a target="_blank" href="http://www.instructables.com/id/-Arduinolitics-Google-Analytics-on-Arduino/">Arduinolitics - Analytics on Arduino</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Thingiverse</p>
+            <ul>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:121099">Open Hardware Logo for PCB Vice</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:236948">Freetronics LeoStick bumper/header</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:225255">DIY Header Pins</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:180982">DIY LED diffuser</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
     </div>
+    <div class="col s12 l4 cards-container">
 
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">devices</i> - Java &amp; Android</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/duke.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">Java was the first programming language I learned and it taught me many good (and bad) habbits. Android was a natural fusion of Java and Linux for my skillset; the android applications I've written are avaliable on the play store under the company "PuZZleDucK Industries" ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Blogs:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <ul>
+              <li><a target="_blank" href="DevAdventures/da01.html">01 - Orbital Live Wallpaper</a></li>
+              <li><a target="_blank" href="DevAdventures/da02.html">02 - Data retention</a></li>
+              <li><a target="_blank" href="DevAdventures/da03.html">03 - XDA Developers "BASH Obsfucation Contest" entry</a></li>
+              <li><a target="_blank" href="DevAdventures/da04.html">04 - Embedding page data in a link</a></li>
+              <li><a target="_blank" href="DevAdventures/da05.html">05 - Gosling's nightmares</a></li>
+              <li><a target="_blank" href="DevAdventures/da06.html">06 - Git yourself a schooling</a></li>
+              <li><a target="_blank" href="DevAdventures/da07.html">07 - An array without bounds (more Gosling nightmares)</a></li>
+              <li><a target="_blank" href="DevAdventures/da08.html">08 - Lambdas and LEDs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">web</i> - Javascript</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/HTML_5.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">The web is the new desktop - which means these must be my "new desktop apps". Click to see pure HTML5 in all it's glory, including a character frequency analyzer ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <p>D3 Projects</p>
+            <a target="_blank" href="HTML5/D3/character-frequency/CharacterFrequency.html">D3: Live Character Frequency Analysis</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">weekend</i> - Hackathon Projects</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/gnu.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">I've participated in a few hackathons in my day, and despite the poor quality and hasty workmanship, I'm still proud of the results. From cultural awareness to citizen budgeting ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Project Links:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <p>Budgethack - 'Budget 2.0'</p>
+            <ul>
+              <li><a target="_blank" href="https://budget-2point0.herokuapp.com/">Application</a></li>
+              <li><a target="_blank" href="https://github.com/PuZZleDucK/Budget-2.0">Source Code</a></li>
+              <li><a target="_blank" href="https://semaphoreci.com/puzzleduck/budget-2-0">CI/CD</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Govhack</p>
+            <ul>
+              <li><a target="_blank" href="http://threeletternames.github.io/GovHack2015/">GovHack - 'Exploring Indigenous Culture'</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=m39MWbq8Mjs">Final Video</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Random Hacks of Kindness</p>
+            <ul>
+              <li><a target="_blank" href="https://rhokaustralia.github.io/melb-maker-map/index.html">RHoK - 'Melbourne Maker Map'</a></li>
+            </ul>
+          </div>
+          <div class="card primary z-depth-5">
+            <p>Civic Hack</p>
+            <ul>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=mWw6YKwDufQ">Visualize Melbourne - 'ASCII Art Histogram'</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">wifi_tethering</i> - The RepWeb</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/reprap.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">This was an old project that enabled customized RepRaps to connect to a central server, to report local conditions, and retrieve instructions. It is now decommissioned and only kept here as a reminder of fun times ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <p>Old dead links</p>
+            <ul>
+              <li><a target="_blank" href="RepRap/RepLogForm.html">RepRap Live Log Entry Form (The InternetOfThingiverse)</a></li>
+              <li><a target="_blank" href="RepRap/index.html">RepRap Network Pages</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    <div class="col s12 l4 cards-container">
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">keyboard</i> - Haskell</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/Haskell_Logo.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">Learning Haskell could have been the best descision of my life. It brought relevance and utility to four years of dedicated study of logic, and opened up a world of possibilities in maths ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Videos:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <p>Live coding</p>
+            <ul>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=VnH3lirZMmY">Euler Problem 5 - 'Smallest Multiple'</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=gI9WDI1UZsY">Euler Problem 8 - 'Largest Product in a Series'</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">assignment</i> - Testing</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/cards.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">I performed electronic gaming machine testing and regulatory compliance for almost a decade and have given a few presentations on the topic ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Links:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <p>Videos</p>
+            <ul>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=VDg2JiLcEO8">Ignite - 'Electronic Gaming Machines'</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">style</i> - 3D Designs</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/openscad.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">The possibilities for 3D printing today are just amazing, and it invigorated my interest in all thing electronic. 3D printing has opened up the possibility for me to design and create truly unique objects ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">3D Designs:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <ul>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=ti1k5np3VnA">Video - OpenSCAD spiral layout</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:247649">Robjects - Toyota headrest mount (Diesel powered Arduino!)</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:240652">Toyota headrest camera mount</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:246633">Electric Valentine - 8 Bit Arduino Heart</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:225261">OpenSCAD - Top Hat</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:156052">Font - Kirsty</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:149838">Back To School Set - 'The Castle'</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:140495">Steampunk Glasses Lense Mod</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:130875">Fluid Circuit - Caterpillar/Bug/Bee</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:114084">Festive Cracker Printability and Scale Mod</a></li>
+              <li><a target="_blank" href="http://www.thingiverse.com/thing:140519">Printable 'Signal White Cane'</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">remove_red_eye</i> - Freedom of Information</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="http://puzzleduck.org/img/right_to_know.png" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">Through the RightToKnow project, I have made a few Freedom of Information requests to the Victorian and federal governments. Click here to see 10 years of contracting data released to the public ...</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">Requests:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <ul>
+              <li><a target="_blank" href="https://www.righttoknow.org.au/request/contracts_published_on_tenders_v#outgoing-6382">Contracts Published on Tenders Vic</a></li>
+              <li><a target="_blank" href="https://www.righttoknow.org.au/request/source_code_of_computercount#incoming-8888">Source code of "ComputerCount"</a></li>
+              <li><a target="_blank" href="https://www.righttoknow.org.au/request/documents_relating_to_implementi#outgoing-6463">Documents relating to e-voting in Victoria</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<!-- TEMPLATE
+    <div class="col s12 l4">
+      <div class="card primary z-depth-5 activator waves-effect waves-block waves-dark tooltipped" data-position="top" data-delay="50" data-tooltip="Click to reveal more">
+        <div class="card-title center activator">
+          <h5 class="activator title"><i class="material-icons small">alarm</i> - FILLER_TITLE</h5>
+          <hr />
+        </div>
+        <div class="activator">
+          <img class="right small activator" height="100" src="IMAGE_SOURCE" alt="icon">
+        </div>
+        <div class="card-content activator">
+          <p class="flow-text activator">PROJECT_DESCRIPTION</p>
+        </div>
+        <div class="card-reveal highlight">
+          <span class="card-title white-text text-darken-4">REVEAL_TITLE_Links:<i class="material-icons right">close</i></span>
+          <div class="card primary z-depth-5">
+            <p>LINK_TEXT</p>
+            <a target="_blank" href="#">FIRST_LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ -->
+
+
+    </div>
+  </div>
+
+
+
+  <footer class="page-footer highlight title">
+     <div class="footer-copyright">
+        <div class="container">
+           © 2017 <a href="mailto:puzzleduck@gmail.com">PuZZleDucK</a>
+           <a class="grey-text text-lighten-4 right" target="_blank" href="https://github.com/PuZZleDucK/PuZZleDucK.ORG">PuZZleDucK.ORG Source Code</a>
+        </div>
+     </div>
+  </footer>
 
 </body>
+</html>

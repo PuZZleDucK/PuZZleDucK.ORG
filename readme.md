@@ -11,9 +11,4 @@ PuZZleDucK (Ben Minerds)
 - migrate previous content
 - updated during migration to Digital Ocean
 - added and updated nginx config
-- updated to material design - TODO:
-  - [x] old version somewhere
-  - [x] add hr's
-  - [x] coptright text dark or bigger to match top
-  - [x] darken shadow
-  - [x] white background on logos / image sizes / caching
+- updated to material design, enabled caching

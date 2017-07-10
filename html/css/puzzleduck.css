@@ -1,0 +1,104 @@
+
+/* Colors */
+.primary{
+  color: #FFF !important;
+  background-color: #332000 !important;
+}
+
+.highlight{
+  color: #FFF !important;
+  background-color: #329A00 !important;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Kirsty;
+    src: url(../fonts/kirsty/kirsty-bd.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: KirstyRegular;
+    src: url(../fonts/kirsty/kirsty-rg.ttf) format("truetype");
+}
+
+.title {
+  font-family: Kirsty;
+}
+
+html {
+  font-family: KirstyRegular;
+}
+
+/* Title and Nav */
+nav .brand-logo {
+    font-size: 3rem;
+}
+
+.nav-wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  align: center;
+}
+
+.nav {
+  align: center;
+}
+
+.nav ul li {
+  float: right;
+}
+
+.dropdown-content {
+  overflow: visible;
+}
+
+/* Main Content */
+.card {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.card-panel {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 10px;
+  padding-bottom: 2px;
+}
+
+.row {
+  margin: 5px;
+}
+
+.flow-text {
+  font-size: 1rem;
+}
+
+.material-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle !important;
+}
+
+img {
+  padding-top: 30px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* Footer */
+.page-footer {
+  padding: 2px;
+  font-size: 1.2rem;
+}
+
+.page-footer a:link {
+  color: blue;
+}
+
+.footer-copyright {
+  padding: 2px;
+}
