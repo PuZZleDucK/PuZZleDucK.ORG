@@ -20,8 +20,6 @@ html {
   src: url(http://www.princexml.com/fonts/larabie/kirsty.ttf) format("truetype");
 }
 
-a:visited { color: blue; }
-
 .card {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -40,6 +38,7 @@ a:visited { color: blue; }
   padding: 2px;
   font-size: 20px;
 }
+.page-footer a:visited { color: blue; }
 
 .footer-copyright {
   padding: 2px;
