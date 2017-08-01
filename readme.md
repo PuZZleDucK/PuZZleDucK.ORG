@@ -12,3 +12,10 @@ PuZZleDucK (Ben Minerds)
 - updated during migration to Digital Ocean
 - added and updated nginx config
 - updated to material design, enabled caching
+- add GovHack and DataStory
+
+### Next
+
+- Add python
+- Add software licensing
+- bash? more linux? ...
