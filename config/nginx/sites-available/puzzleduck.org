@@ -37,10 +37,6 @@ server {
 		expires 10d;
 	}
 
-	# deny access to .htaccess files, if Apache's document root
-	# concurs with nginx's one
-	#
-	#location ~ /\.ht {
-	#	deny all;
-	#}
+	# Update ssl parameters
+	ssl_dhparam /etc/ssl/certs/dhparam.pem;
 }

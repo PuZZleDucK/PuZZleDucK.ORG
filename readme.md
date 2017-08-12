@@ -13,6 +13,7 @@ PuZZleDucK (Ben Minerds)
 - added and updated nginx config
 - updated to material design, enabled caching
 - add GovHack and DataStory
+- add certbot ssl
 
 ### Next
 
