@@ -2,12 +2,12 @@
 
 echo
 echo ":: SETUP Repository"
+sudo add-apt-repository --yes ppa:certbot/certbot
+sudo apt-get update
 
 echo
 echo ":: INSTALLING Certbot"
-sudo add-apt-repository --yes ppa:certbot/certbot
-sudo apt-get update
-sudo apt-get install python-certbot-nginx
+sudo apt-get install --yes python-certbot-nginx
 
 echo
 echo ":: ENABLING UFW SSL"
