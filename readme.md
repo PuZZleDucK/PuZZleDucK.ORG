@@ -13,10 +13,10 @@ PuZZleDucK (Ben Minerds)
 - added and updated nginx config
 - updated to material design, enabled caching
 - add GovHack and DataStory
+- Add software licensing
 - add certbot ssl
 
 ### Next
 
 - Add python
-- Add software licensing
 - bash? more linux? ...
