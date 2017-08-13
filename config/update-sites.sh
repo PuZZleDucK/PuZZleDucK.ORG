@@ -6,5 +6,5 @@ git pull
 
 echo ""
 echo ":: Updating other projects"
-# cd /home/user/projects/blah
-# git pull
+cd /home/user/x/ipgod
+git pull

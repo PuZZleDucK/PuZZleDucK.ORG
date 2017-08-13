@@ -16,8 +16,10 @@ PuZZleDucK (Ben Minerds)
 - Add software licensing
 - Add certbot ssl
 - Add php test page
+- script updates
+- Add python
 
 ### Next
 
-- Add python
+- Add python projects
 - bash? more linux? ...
