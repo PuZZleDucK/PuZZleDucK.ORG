@@ -14,6 +14,11 @@ server {
 		internal; # deny direct access
 	}
 
+	location /ipgod/ {
+		include proxy_params;
+		proxy_pass http://unix:/home/user/x/ipgod/myproject.sock;
+	}
+
 	location /sub/ {
 		index NON_EXISTENT_FILE; # don't redirect to index
 		autoindex on;            # auto generate file listing
