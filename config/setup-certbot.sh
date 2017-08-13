@@ -16,7 +16,7 @@ sudo ufw allow 'Nginx Full'
 echo
 echo ":: INTERACTIVE: Run certbot"
 echo "Now run:"
-echo "    sudo certbot --nginx -d puzzleduck.org"
+echo "    sudo certbot --nginx -d puzzleduck.org -d www.puzzleduck.org"
 echo "Then backup config:"
 echo "    sudo tar zcvf /home/user/backups/letsencrypt_backup_$(date +'%Y-%m-%d_%H%M').tar.gz /etc/letsencrypt"
 echo "    tar tvf /home/user/backups/letsencrypt_backup_<date>.tar.gz"
@@ -37,5 +37,4 @@ echo "    sudo crontab -e"
 echo "Add:"
 echo "    30 2 * * * /usr/bin/certbot renew --quiet"
 
-echo
-echo ":: Restart Nginx"
+

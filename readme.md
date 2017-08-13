@@ -6,15 +6,16 @@ PuZZleDucK (Ben Minerds)
 
 ### History
 
-- deployed to Agility Hosting via FTP
-- upgraded to git based deployment
-- migrate previous content
-- updated during migration to Digital Ocean
-- added and updated nginx config
-- updated to material design, enabled caching
-- add GovHack and DataStory
+- Deployed to Agility Hosting via FTP
+- Upgraded to git based deployment
+- Migrate previous content
+- Updated during migration to Digital Ocean
+- Added and updated nginx config
+- Updated to material design, enabled caching
+- Add GovHack and DataStory
 - Add software licensing
-- add certbot ssl
+- Add certbot ssl
+- Add php test page
 
 ### Next
 
