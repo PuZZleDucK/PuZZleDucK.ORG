@@ -18,6 +18,7 @@ PuZZleDucK (Ben Minerds)
 - Add php test page
 - script updates
 - Add python
+- Moved blog to GitLab Jekyll
 
 ### Next
 
