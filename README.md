@@ -19,8 +19,21 @@ PuZZleDucK (Ben Minerds)
 - script updates
 - Add python
 - Moved blog to GitLab Jekyll
+- Update to Rails site
 
 ### Next
 
 - Add python projects
 - bash? more linux? ...
+
+
+# Rails
+
+* Ruby/Rails: 3.1/7.1.3
+* System dependencies: Docker/SSH
+* Configuration: .env
+* Database sqlite3
+* Test: rspec/webdriver
+* Services (job queues, cache servers, search engines, etc.)
+* Deployment: Kamal
+* ...
