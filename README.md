@@ -27,7 +27,7 @@ PuZZleDucK (Ben Minerds)
 - bash? more linux? ...
 
 
-# Rails
+## Rails
 
 * Ruby/Rails: 3.1/7.1.3
 * System dependencies: Docker/SSH
@@ -37,3 +37,12 @@ PuZZleDucK (Ben Minerds)
 * Services (job queues, cache servers, search engines, etc.)
 * Deployment: Kamal
 * ...
+
+## Docker
+
+* `docker build -t puzzleduck.org .` # Build image
+* `docker volume create puzzleduck.org-storage` # Make storage volume
+* `docker run --rm -it -v puzzleduck.org-storage:/rails/storage -p 3001:3001 --env RAILS_MASTER_KEY=<your-config-master-key> puzzleduck.org` # Run image
+* `docker tag puzzleduck.org:latest puzzleduck/puzzleduck.org:latest` # tag for publishing
+* `docker login`
+* `docker push puzzleduck/puzzleduck.org:latest` # eg publish
