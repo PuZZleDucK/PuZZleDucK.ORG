@@ -48,10 +48,7 @@ traefik:
 
 # Configure a custom healthcheck (default is /up on port 3000)
 healthcheck:
-  path: /up
-  max_attempts: 7
-  exposed_port: 4000
-  cmd: true
+  cmd: /bin/true
 
 # Bridge fingerprinted assets, like JS and CSS, between versions to avoid
 # hitting 404 on in-flight requests. Combines all files from new and old
