@@ -42,7 +42,7 @@ PuZZleDucK (Ben Minerds)
 
 * `docker build -t puzzleduck.org .` # Build image
 * `docker volume create puzzleduck.org-storage` # Make storage volume
-* `docker run --rm -it -v puzzleduck.org-storage:/rails/storage -p 3001:3001 --env RAILS_MASTER_KEY=<your-config-master-key> puzzleduck.org` # Run image
+* `docker run --rm -it -v puzzleduck.org-storage:/rails/storage -p 3000:3000 --env RAILS_MASTER_KEY=<your-config-master-key> puzzleduck.org` # Run image
 * `docker tag puzzleduck.org:latest puzzleduck/puzzleduck.org:latest` # tag for publishing
 * `docker login`
 * `docker push puzzleduck/puzzleduck.org:latest` # eg publish
